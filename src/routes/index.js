@@ -5,7 +5,7 @@ const createUsers = require("../handlers/users/createUsers");
 const updateUsers = require("../handlers/users/updateUsers");
 const deleteUsers = require("../handlers/users/deleteUsers");
 
-router.get("/users", getUsers);
+router.get("/all", getUsers);
 
 router.get("/create", createUsers);
 

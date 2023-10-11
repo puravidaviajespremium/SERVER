@@ -3,6 +3,6 @@ module.exports = (req, res, next) => {
   if (logged) {
     next();
   } else {
-    res.send("Para esta funcion debe permisos");
+    res.send("Usuario No logeado");
   }
 };
