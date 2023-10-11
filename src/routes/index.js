@@ -1,11 +1,16 @@
 const { Router } = require("express");
-const server = require("../server");
 const router = Router();
+const getUsers = require("../handlers/users/getUsers");
+const createUsers = require("../handlers/users/createUsers");
+const updateUsers = require("../handlers/users/updateUsers");
+const deleteUsers = require("../handlers/users/deleteUsers");
 
-server.get("/", (req, res) => {
-  res.send("Bienvenido");
-});
+router.get("/users", getUsers);
 
-server.use("/users", user);
+router.get("/create", createUsers);
+
+router.get("/update", updateUsers);
+
+router.get("/delete", deleteUsers);
 
 module.exports = router;
