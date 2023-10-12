@@ -6,30 +6,62 @@ module.exports = (sequelize) => {
     "Client",
     {
       id: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
         primaryKey: true,
+        defaultValue: DataTypes.UUIDV4
       },
-      firstname: {
+      firstName: {
         type: DataTypes.STRING,
         allowNull: false,
+        validate: {
+          min: 1,
+        }
       },
-      lastname: {
+      lastName: {
         type: DataTypes.STRING,
         allowNull: false,
-      },
-      telephone: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        validate: {
+          min: 1,
+        }
       },
       email: {
         type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          isEmail: true,
+        }
       },
-      status: {
+      telephone: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+          isNumeric: true,
+        }
+      },
+      comment: {
         type: DataTypes.STRING,
+        validate: {
+          min: 20,
+          max: 200,
+        }
       },
-      target: {
+      membershipStatus: {
+        type: DataTypes.ENUM, 
+        values: ["Plata", "Dorado", "Diamante"],
+        allowNull: false,
+        defaultValue: "Plata", 
+      },
+      contactStatus: {
+        type: DataTypes.ENUM,
+        values: ["Contactado", "En espera", "Ganado", "Perdido"],
+        allowNull: false,
+        defaultValue: "En espera",
+      },
+      userType:{
         type: DataTypes.STRING,
-      },
+        defaultValue: "Cliente",
+      }
+      //PREFERENCIAS/GUSTOS más adelante.
     },
     { timestamps: false }
   );

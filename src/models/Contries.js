@@ -21,16 +21,16 @@ module.exports = (sequelize) => {
         type: DataTypes.TEXT,
         allowNull: false,
       },
-      actividades: {
-        type: DataTypes.ARRAY,
-        allowNull: false,
-      },
+      // actividades: {
+      //   type: DataTypes.ARRAY,
+      //   allowNull: false,
+      // },
       continente: {
         type: DataTypes.STRING,
       },
-      destinosMasVisitados: {
-        type: DataTypes.ARRAY,
-      },
+      // destinosMasVisitados: {
+      //   type: DataTypes.ARRAY,
+      // },
     },
     { timestamps: false }
   );
