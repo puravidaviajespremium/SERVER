@@ -1,17 +1,16 @@
-// const { Router } = require("express");
-// const router = Router();
+const { Router } = require("express");
+const router = Router();
+const getUsers = require("../handlers/users/getUsers");
+const createUsers = require("../handlers/users/createUsers");
+const updateUsers = require("../handlers/users/updateUsers");
+const deleteUsers = require("../handlers/users/deleteUsers");
 
-// const getUsers = require("../handlers/users/getUsers");
-// const createUsers = require("../handlers/users/createUsers");
-// const updateUsers = require("../handlers/users/updateUsers");
-// const deleteUsers = require("../handlers/users/deleteUsers");
+router.get("/all", getUsers);
 
-// router.get("/users", getUsers);
+router.get("/create", createUsers);
 
-// router.get("/create", createUsers);
+router.get("/update", updateUsers);
 
-// router.get("/update", updateUsers);
+router.get("/delete", deleteUsers);
 
-// router.get("/delete", deleteUsers);
-
-// module.exports = users;
+module.exports = router;
