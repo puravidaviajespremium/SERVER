@@ -2,7 +2,9 @@ const express = require("express");
 const server = express();
 require("dotenv").config();
 const { PORT } = process.env;
-const user = require("./src/routes/index");
+const user = require("./src/routes/users");
+const countries = require("./src/routes/countries");
+const clients = require("./src/routes/clients");
 const { conn } = require("./src/db.js");
 const isLogged = require("./src/middlewares/isLogged");
 
@@ -40,6 +42,10 @@ server.get("/", (req, res) => {
   res.send("Bienvenido");
 });
 server.use("/users", user);
+
+server.use("/countries", countries);
+
+server.use("/clients", clients);
 
 // Error catching endware.
 server.use(errors);

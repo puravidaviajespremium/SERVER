@@ -22,14 +22,14 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       actividades: {
-        type: DataTypes.ARRAY,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       continente: {
         type: DataTypes.STRING,
       },
       destinosMasVisitados: {
-        type: DataTypes.ARRAY,
+        type: DataTypes.STRING,
       },
     },
     { timestamps: false }
