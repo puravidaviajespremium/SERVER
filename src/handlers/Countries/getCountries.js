@@ -1,6 +1,14 @@
-const getCountriesCtlr = require("../../controllers/Countries/getCountriesCtlr");
+const {allCountries} = require("../../controllers/Countries/getCountriesCtlr")
 
-module.exports = (req, res) => {
-  const response = getCountriesCtlr();
-  res.send(response);
+const getCountries = async (req, res) =>{
+  try{
+    const countries = await allCountries();
+    res.status(200).json(countries)
+
+  } catch (error) {
+      res.status(400).json({error: error.message});
+  }
 };
+
+
+module.exports = getCountries 

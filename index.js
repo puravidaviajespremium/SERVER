@@ -7,6 +7,9 @@ const countries = require("./src/routes/countries");
 const clients = require("./src/routes/clients");
 const { conn } = require("./src/db.js");
 const isLogged = require("./src/middlewares/isLogged");
+const {Router} = require("express")
+const router = Router();
+
 
 //Middlewares
 server.use(isLogged);
