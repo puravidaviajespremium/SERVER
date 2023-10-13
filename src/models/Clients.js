@@ -6,15 +6,15 @@ module.exports = (sequelize) => {
     "Client",
     {
       id: {
-        type: DataTypes.UUID,
+        type: DataTypes.INTEGER,
         primaryKey: true,
-        defaultValue: DataTypes.UUIDV4
+        autoIncrement: true,
       },
       firstName: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          min: 1,
+          min: 2,
         }
       },
       lastName: {
@@ -32,10 +32,10 @@ module.exports = (sequelize) => {
         }
       },
       telephone: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          isNumeric: true,
+          is: /^\d{10}$/
         }
       },
       comment: {
@@ -53,9 +53,9 @@ module.exports = (sequelize) => {
       },
       contactStatus: {
         type: DataTypes.ENUM,
-        values: ["Contactado", "En espera", "Ganado", "Perdido"],
+        values: ["Prospecto", "Contactado", "En espera", "Ganado", "Perdido"],
         allowNull: false,
-        defaultValue: "En espera",
+        defaultValue: "Prospecto",
       },
       userType:{
         type: DataTypes.STRING,
