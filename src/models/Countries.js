@@ -14,25 +14,34 @@ module.exports = (sequelize) => {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
+        validate:{
+          min: 4,
+          max: 20,
+          
+        }
       },
       image: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      descripcion: {
-        type: DataTypes.TEXT,
+      description: {
+        type: DataTypes.STRING(1234),
+        allowNull: false,
+        validate: {
+          min: 20,
+          max: 500,
+        }
+      },
+      experiences: {
+        type: DataTypes.ARRAY(DataTypes.STRING), 
         allowNull: false,
       },
-      actividades: {
-        type: DataTypes.STRING,
+      continents: {
+        type: DataTypes.ENUM,
+        values: ["America", "Africa", "Oceania", "Asia", "Europa"],
         allowNull: false,
       },
-      continente: {
-        type: DataTypes.STRING,
-      },
-      destinosMasVisitados: {
-        type: DataTypes.STRING,
-      },
+     
     },
     { timestamps: false }
   );
