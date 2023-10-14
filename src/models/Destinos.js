@@ -3,18 +3,19 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define(
-    "Country",
+    "Destiny",
     {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
       },
+
       name: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          min: 4,
+          min: 2,
           max: 20,
         },
       },
@@ -30,17 +31,7 @@ module.exports = (sequelize) => {
           max: 500,
         },
       },
-      experiences: {
-        type: DataTypes.JSON,
-        allowNull: false,
-      },
-      continent: {
-        type: DataTypes.ENUM,
-        values: ["America", "Africa", "Oceania", "Asia", "Europa"],
-        allowNull: false,
-      },
     },
-    { timestamps: false },
-    { paranoid: true }
+    { timestamps: false }
   );
 };

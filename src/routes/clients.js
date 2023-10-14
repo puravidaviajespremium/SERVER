@@ -1,20 +1,20 @@
 const { Router } = require("express");
 const routerClients = Router();
+const createClientsHandler = require("../handlers/Clients/createClients.js");
+const getClientsHandler = require("../handlers/Clients/getClients.js");
+const updateClientHandler = require("../handlers/Clients/updateClient.js");
+const deleteClientHandler = require("../handlers/Clients/deleteClient.js");
 
-routerClients.get("/all", (req, res) => {
-  res.send("GET Endpoind que muestra todos los clientes");
-});
 
-routerClients.get("/create", (req, res) => {
-  res.send("POST Endpoind para Crear Nuevos Clientes");
-});
+routerClients.post("/create", createClientsHandler);  //GENERAL
 
-routerClients.get("/update", (req, res) => {
-  res.send("UPDATE Endpoind para Modificar datos de los  clientes");
-});
+routerClients.get("/", getClientsHandler);            //USO COLABORADORES Y ADMIN 
 
-routerClients.get("/delete", (req, res) => {
-  res.send("DELETE Endpoind para Eliminar Clientes");
-});
+routerClients.put("/update", updateClientHandler);    //USO SOLO ADMIN
+
+//ruta por ID
+ 
+routerClients.delete("/delete", deleteClientHandler);    //USO SOLO ADMIN
+ 
 
 module.exports = routerClients;
