@@ -11,7 +11,7 @@ const createClientsHandler = async (req, res) => {
 
         res.status(201).send(newClient);
     } catch (error) {
-        res.status(404).json({error: error.message});
+        res.status(500).json({error: error.message});
     }
 };
 
