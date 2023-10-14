@@ -1,13 +1,13 @@
-
-const {Client} = require("../../db.js");
+const { Client } = require("../../db.js");
 
 const getAllClients = async () => {
+  const allClients = await Client.findAll();
 
-    const allClients = await Client.findAll();
+  if (allClients.length === 0) {
+    throw new Error("No hay ningún cliente en la base de datos!");
+  }
 
-    if(allClients.length === 0){throw new Error("No hay ningún cliente en la base de datos!")}
-
-    return allClients;
+  return allClients;
 };
 
 module.exports = getAllClients;

@@ -15,41 +15,41 @@ module.exports = (sequelize) => {
         allowNull: false,
         validate: {
           min: 2,
-        }
+        },
       },
       lastName: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           min: 1,
-        }
+        },
       },
       email: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           isEmail: true,
-        }
+        },
       },
       telephone: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          is: /^\d{10}$/
-        }
+          is: /^\d{10}$/,
+        },
       },
       comment: {
         type: DataTypes.STRING,
         validate: {
           min: 20,
           max: 200,
-        }
+        },
       },
       membershipStatus: {
-        type: DataTypes.ENUM, 
+        type: DataTypes.ENUM,
         values: ["Plata", "Dorado", "Diamante"],
         allowNull: false,
-        defaultValue: "Plata", 
+        defaultValue: "Plata",
       },
       contactStatus: {
         type: DataTypes.ENUM,
@@ -57,12 +57,13 @@ module.exports = (sequelize) => {
         allowNull: false,
         defaultValue: "Prospecto",
       },
-      userType:{
+      userType: {
         type: DataTypes.STRING,
         defaultValue: "Cliente",
-      }
+      },
       //PREFERENCIAS/GUSTOS más adelante.
     },
-    { timestamps: false }
+    { timestamps: false },
+    { paranoid: true }
   );
 };

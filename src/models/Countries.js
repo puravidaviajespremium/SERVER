@@ -9,16 +9,14 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-        
       },
       name: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate:{
+        validate: {
           min: 4,
           max: 20,
-          
-        }
+        },
       },
       image: {
         type: DataTypes.STRING,
@@ -30,19 +28,19 @@ module.exports = (sequelize) => {
         validate: {
           min: 20,
           max: 500,
-        }
+        },
       },
       experiences: {
-        type: DataTypes.ARRAY(DataTypes.STRING), 
+        type: DataTypes.JSON,
         allowNull: false,
       },
-      continents: {
+      continent: {
         type: DataTypes.ENUM,
         values: ["America", "Africa", "Oceania", "Asia", "Europa"],
         allowNull: false,
       },
-     
     },
-    { timestamps: false }
+    { timestamps: false },
+    { paranoid: true }
   );
 };
