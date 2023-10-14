@@ -1,13 +1,13 @@
 const { Router } = require("express");
 const getCountries = require("../handlers/Countries/getCountries");
-const createCountries = require("../handlers/Countries/createCountries");
+const createnewCountries = require("../handlers/Countries/createCountries");
 const deleteCountries = require("../handlers/Countries/deleteCountries");
 const updateCountries = require("../handlers/Countries/updateCountries");
 const routerCountries = Router();
 
-routerCountries.get("/all", getCountries);
+routerCountries.get("/all", getCountries); // terminada 
 
-routerCountries.post("/create", createCountries);
+routerCountries.post("/create", createnewCountries); // terminada
 
 routerCountries.get("/update", updateCountries);
 
