@@ -1,0 +1,27 @@
+{
+    "name": "Africa Salvaje",  "image":"https://images.pexels.com/photos/6056776/pexels-photo-6056776.jpeg?auto=compress&cs=tinysrgb&w=1920",
+		"continent":"Africa",
+		"description":"Maravillas geográficas y naturales, historia del arte, animales, joyas, moda africana… reconocido por su hermosa y colorida vestimenta, que junto a su humilde historia y mágico paisajismo, forman la panorámica de viaje perfecta. África además, es la cuna de los seres humanos que aparecieron por primera vez en la tierra y el hogar de la primera gran civilización del mundo",
+		"experiences":"Safari",
+		"destinies":[{
+			"name":"Sudafrica",
+			"description":"Conocida como la Nación del Arcoíris, Sudáfrica tiene una pureza única. Su naturaleza y vida salvaje hacen que sea un destino que atrae por muchas razones a cualquier apasionado de los viajes.",
+			"image":"https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=600"
+			},
+		{
+		"name":"Congo",
+		"description":"El Congo es el segundo bioma de selva tropical más grande del mundo, alimentado por el segundo río más grande.",
+		"image":"https://images.pexels.com/photos/18031688/pexels-photo-18031688/free-photo-of-ciudad-carretera-gente-mujer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+	},
+	{
+		"name":"Sabana",
+		"description":"La sabana es un tipo de ecosistema formado por una llanura de gran extensión cubierta de pastizales y hierbas en la que hay escasos árboles dispersos. Las sabanas están ubicadas en áreas tropicales y subtropicales y se caracterizan por ser una zona de transición entre el semidesierto y la selva.",
+		"image":"https://images.pexels.com/photos/6815842/pexels-photo-6815842.jpeg?auto=compress&cs=tinysrgb&w=600"
+	},
+	{
+		"name":"Egipto",
+		"description":"Egipto, oficialmente la República Árabe de Egipto, es un país soberano transcontinental, ubicado mayoritariamente en el extremo noreste de África mientras que en Asia, se encuentra en la península del Sinaí. Limita con Sudán al sur, con Libia al oeste y con el Estado de Palestina e Israel al noreste. Al norte limita con el mar Mediterráneo y al sureste con el mar Rojo. ",
+		"image":"https://images.pexels.com/photos/15127306/pexels-photo-15127306/free-photo-of-desierto-estatua-escultura-historia.jpeg?auto=compress&cs=tinysrgb&w=600"
+	}
+]
+}
