@@ -3,7 +3,8 @@ const {
 } = require("../../controllers/Countries/createCountriesCtlr");
 
 const createnewCountry = async (req, res) => {
-  const { name, image, description, experiences, continent } = req.body;
+  const { name, image, description, experiences, continent, destinies } =
+    req.body;
 
   try {
     const newCountry = await createCountries(
@@ -11,7 +12,8 @@ const createnewCountry = async (req, res) => {
       image,
       description,
       experiences,
-      continent
+      continent,
+      destinies
     );
     res.status(201).json(newCountry);
   } catch (error) {
