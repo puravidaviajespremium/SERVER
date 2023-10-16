@@ -25,9 +25,6 @@ const createCountriesMasivo = async (req, res) => {
     });
 
     const countries = await Country.findAll();
-    // {
-    //   include: Destiny,
-    // });
 
     res.status(201).json(countries);
   } catch (error) {
