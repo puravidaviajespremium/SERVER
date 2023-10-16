@@ -1,0 +1,274 @@
+[
+  {
+    "name": "Costa Rica",
+    "image": "https://images.pexels.com/photos/9482124/pexels-photo-9482124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Es un país de América Central con una geografía accidentada, que incluye bosques tropicales y costas en el Caribe y el Pacífico. Aunque su capital, San José, es hogar de instituciones culturales, como el Museo del Oro Precolombino, Costa Rica es conocida por sus playas, sus volcanes y su biodiversidad",
+		"experiences":"{exp:Buceo}",
+    "destinies":[
+     {
+      "name":"PARQUE NACIONAL TORTUGUERO",
+      "description":"Es uno de los principales iconos turísticos de Costa Rica debido a que se reconoce internacionalmente por proteger la playa de anidación de tortugas verdes más importante del hemisferio occidental.",
+      "image":"https://images.pexels.com/photos/3661926/pexels-photo-3661926.jpeg?auto=compress&cs=tinysrgb&w=600"
+     },
+     {
+      "name": "Playa Manuel Antonio",
+      "description":
+        "Esta playa de arena blanca forma parte del Parque Nacional Manuel Antonio. Podrá disfrutar de un hermoso sitio de arena blanca, agua cristalina y árboles que dan sombra en la orilla.",
+      "image":
+        "https://images.pexels.com/photos/13501101/pexels-photo-13501101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Cataratas de la Fortuna",
+      "description":
+        "Se esconde un pedacito de naturaleza, de oro verde, la que le da el sustento a nuestra comunidad y nos hace sentir orgullosos por su belleza, la Catarata Río Fortuna",
+      "image":
+        "https://images.pexels.com/photos/14580735/pexels-photo-14580735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Cahuita National Park",
+      "description":
+        "Ideal para actividades acuáticas, como el esnórquel, alberga uno de los mayores arrecifes coralinos de la costa caribeña y el más importante de Costa Rica.",
+      "image":"https://images.pexels.com/photos/3324590/pexels-photo-3324590.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+    ]
+  },
+  {
+    "name": "Argentina",
+    "image": "https://images.pexels.com/photos/8242964/pexels-photo-8242964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra de Contrastes",
+		"experiences":"Tango",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Perú",
+    "image": "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra de Origenes",
+		"experiences":"Montaña",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Colombia",
+    "image": "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra del cafe",
+		"experiences":"Ballenatos",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Brasil",
+    "image": "https://images.pexels.com/photos/13911606/pexels-photo-13911606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra del Carnaval",
+		"experiences":"Zambar",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Francia",
+    "image": "https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "Europa",
+		"description":"Tierra del Croissant",
+		"experiences":"Museo del Louvre",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Republica Dominicana",
+    "image": "https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra de Caribe",
+		"experiences":"Playa",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "México",
+    "image": "https://images.pexels.com/photos/16134906/pexels-photo-16134906/free-photo-of-san-jose-iturbide.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra del Guacamole",
+		"experiences":"tacos",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  }
+]
