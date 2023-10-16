@@ -1,7 +1,7 @@
 {
     "name": "Africa Salvaje",  "image":"https://images.pexels.com/photos/6056776/pexels-photo-6056776.jpeg?auto=compress&cs=tinysrgb&w=1920",
 		"continent":"Africa",
-		"description":"Vida Salvaje",
+		"description":"Maravillas geográficas y naturales, historia del arte, animales, joyas, moda africana… reconocido por su hermosa y colorida vestimenta, que junto a su humilde historia y mágico paisajismo, forman la panorámica de viaje perfecta. África además, es la cuna de los seres humanos que aparecieron por primera vez en la tierra y el hogar de la primera gran civilización del mundo",
 		"experiences":"Safari",
 		"destinies":[{
 			"name":"Sudafrica",
@@ -11,7 +11,7 @@
 		{
 		"name":"Congo",
 		"description":"El Congo es el segundo bioma de selva tropical más grande del mundo, alimentado por el segundo río más grande.",
-		"image":"https://www.pexels.com/es-ES/buscar/selva%20africana/?size=medium"
+		"image":"https://images.pexels.com/photos/18031688/pexels-photo-18031688/free-photo-of-ciudad-carretera-gente-mujer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 	},
 	{
 		"name":"Sabana",

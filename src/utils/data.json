@@ -63,7 +63,7 @@
        "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
        "description":
          "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
-       "image":"https://www.pexels.com/es-es/foto/glaciar-iceberg-nieve-paisaje-13408595/"
+       "image":"https://content.r9cdn.net/rimg/dimg/a9/50/3d0b550a-city-52460-1671e1e779a.jpg?crop=true&width=1020&height=498"
      }
      ]
   },
@@ -101,7 +101,7 @@
     "image": "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Bienvenidos a Colombia, un país de contrastes inolvidables. Desde las cumbres nevadas de los Andes hasta las cálidas playas del Caribe, Colombia te ofrece una experiencia única. Descubre la magia de sus ciudades coloniales como Cartagena y Villa de Leyva, donde las calles empedradas y las plazas históricas te transportarán en el tiempo. Sumérgete en la selva amazónica y maravíllate con la diversidad de flora y fauna que alberga. La hospitalidad de su gente, la música que llena el aire y la gastronomía que te cautivará, harán que tu visita a Colombia sea inolvidable. Desde la vibrante Bogotá hasta la belleza natural de San Agustín y el encanto de Medellín, Colombia te espera con los brazos abiertos para ofrecerte una experiencia única.",
-		"experiences":"Ballenatos",
+		"experiences":"Vallenatos",
     "destinies":[
       {
           "name": "Cartagena de Indias",
