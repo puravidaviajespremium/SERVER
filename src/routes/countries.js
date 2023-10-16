@@ -15,8 +15,8 @@ routerCountries.post("/createmasivo", createCountriesMasivo);
 
 routerCountries.get("/country/:id", getCountriesById);
 
-routerCountries.get("/update", updateCountries);
+routerCountries.put("/update", updateCountries);
 
-routerCountries.get("/delete", deleteCountries);
+routerCountries.get("/delete", deleteCountries); // terminada - MIRAR con el grupo 
 
 module.exports = routerCountries;
