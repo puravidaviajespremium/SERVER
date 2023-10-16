@@ -1,17 +1,16 @@
-const { Country } = require("../../db.js");
+const { Country, Destiny } = require("../../db.js");
 
 const getCountriesByIdctlr = async (id) => {
-  const countriesByName = await Country.findAll({
-    where: {
-      id: id,
-    },
+  const countriesById = await Country.findOne({
+    where: { id },
+    include: Destiny,
   });
 
-  if (!countriesByName || Object.keys(countriesByName).length === 0) {
-    throw new Error("No existe el destino buscado.");
+  if (!countriesById) {
+    throw new Error("Destino no encontrado");
   }
 
-  return countriesByName;
+  return countriesById;
 };
 
 module.exports = getCountriesByIdctlr;

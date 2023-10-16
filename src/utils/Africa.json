@@ -1,0 +1,27 @@
+{
+    "name": "Africa Salvaje",  "image":"https://elcomercio.pe/resizer/vvddR7amTrTYuEReYoL4fBvJqQg=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/QXIZWZSLIVAIFBORGM7DOOXNLE.jpg",
+		"continent":"Africa",
+		"description":"Vida Salvaje",
+		"experiences":"Safari",
+		"destinies":[{
+			"name":"Sudafrica",
+			"description":"Conocida como la Nación del Arcoíris, Sudáfrica tiene una pureza única. Su naturaleza y vida salvaje hacen que sea un destino que atrae por muchas razones a cualquier apasionado de los viajes.",
+			"image":"https://travelviajes.net/image/ciudad-del-cabo-sudafrica-735.jpg"
+			},
+		{
+		"name":"Congo",
+		"description":"El Congo es el segundo bioma de selva tropical más grande del mundo, alimentado por el segundo río más grande.",
+		"image":"https://b2556047.smushcdn.com/2556047/wp-content/uploads/2021/11/1253_6fedaa1b4bd6d9e-1024x678.jpeg?lossy=0&strip=1&webp=1"
+	},
+	{
+		"name":"Sabana",
+		"description":"La sabana es un tipo de ecosistema formado por una llanura de gran extensión cubierta de pastizales y hierbas en la que hay escasos árboles dispersos. Las sabanas están ubicadas en áreas tropicales y subtropicales y se caracterizan por ser una zona de transición entre el semidesierto y la selva.",
+		"image":"https://concepto.de/wp-content/uploads/2018/10/sabana1-e1539982728250.jpg"
+	},
+	{
+		"name":"Egipto",
+		"description":"Egipto, oficialmente la República Árabe de Egipto, es un país soberano transcontinental, ubicado mayoritariamente en el extremo noreste de África mientras que en Asia, se encuentra en la península del Sinaí. Limita con Sudán al sur, con Libia al oeste y con el Estado de Palestina e Israel al noreste. Al norte limita con el mar Mediterráneo y al sureste con el mar Rojo. ",
+		"image":"https://www.vamos-viajando.com/images/wikis/1673541288wikiitems.jpg"
+	}
+]
+  }

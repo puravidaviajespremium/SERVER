@@ -1,0 +1,264 @@
+[
+  {
+    "name": "Costa Rica",
+    "image": "https://images.pexels.com/photos/9482124/pexels-photo-9482124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Es un país de América Central con una geografía accidentada, que incluye bosques tropicales y costas en el Caribe y el Pacífico. Aunque su capital, San José, es hogar de instituciones culturales, como el Museo del Oro Precolombino, Costa Rica es conocida por sus playas, sus volcanes y su biodiversidad",
+		"experiences":"Buceo",
+    "destinies":[
+     {
+      "name":"PARQUE NACIONAL TORTUGUERO",
+      "description":"Es uno de los principales iconos turísticos de Costa Rica debido a que se reconoce internacionalmente por proteger la playa de anidación de tortugas verdes más importante del hemisferio occidental.",
+      "image":"https://images.pexels.com/photos/3661926/pexels-photo-3661926.jpeg?auto=compress&cs=tinysrgb&w=600"
+     },
+     {
+      "name": "Playa Manuel Antonio",
+      "description":
+        "Esta playa de arena blanca forma parte del Parque Nacional Manuel Antonio. Podrá disfrutar de un hermoso sitio de arena blanca, agua cristalina y árboles que dan sombra en la orilla.",
+      "image":
+        "https://images.pexels.com/photos/13501101/pexels-photo-13501101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Cataratas de la Fortuna",
+      "description":
+        "Se esconde un pedacito de naturaleza, de oro verde, la que le da el sustento a nuestra comunidad y nos hace sentir orgullosos por su belleza, la Catarata Río Fortuna",
+      "image":
+        "https://images.pexels.com/photos/14580735/pexels-photo-14580735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Cahuita National Park",
+      "description":
+        "Ideal para actividades acuáticas, como el esnórquel, alberga uno de los mayores arrecifes coralinos de la costa caribeña y el más importante de Costa Rica.",
+      "image":"https://images.pexels.com/photos/3324590/pexels-photo-3324590.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+    ]
+  },
+  {
+    "name": "Argentina",
+    "image": "https://images.pexels.com/photos/8242964/pexels-photo-8242964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra de Contrastes",
+		"experiences":"Tango",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://images.pexels.com/photos/4596205/pexels-photo-4596205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://images.pexels.com/photos/1709920/pexels-photo-1709920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://images.pexels.com/photos/8242973/pexels-photo-8242973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://www.pexels.com/es-es/foto/glaciar-iceberg-nieve-paisaje-13408595/"
+     }
+     ]
+  },
+  {
+    "name": "Perú",
+    "image": "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra de Origenes",
+		"experiences":"Trekking",
+    "destinies":[
+      {
+          "name": "Machu Picchu",
+          "image": "https://images.pexels.com/photos/2929906/pexels-photo-2929906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Machu Picchu es uno de los lugares emblemáticos de Perú, una antigua ciudad Inca ubicada entre las montañas de los Andes peruanos, a 2.438 metros de altura, que se mantuvo oculta durante la conquista española. En Machu Picchu podrás caminar entre las ruinas de una de las ciudades más esplendorosas del mundo precolombino, conocerás de primera mano la grandeza de uno de los imperios más importantes del mundo y podrás contemplar uno de los paisajes más lindos de Perú."
+      },
+      {
+          "name": "Laguna Humantay",
+          "image": "https://images.pexels.com/photos/16846534/pexels-photo-16846534/free-photo-of-nieve-montanas-naturaleza-laguna.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Es un mítico cuerpo de agua que se encuentra entre las montañas más altas de Cusco, y que en los últimos años se ha convertido en el destino ideal para los amantes del senderismo y de la Pachamama. Esta laguna de cautivantes colores se encuentra a 4.200 metros de altitud, nace de los Apus (montañas sagradas) conocidos como Ausangate y Salcantay, y mientras llegas a ella podrás contemplar la flora y fauna propia de la Cordillera de los Andes"
+      },
+      {
+          "name": "Montaña de Colores",
+          "image": "https://images.pexels.com/photos/6921111/pexels-photo-6921111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "La Montaña de Colores o Vinicunca, su nombre originario, en donde podrás reconocer al menos siete colores del arcoiris y estarás por encima de los 5.200 metros sobre el nivel del mar. Vinicunca se encuentra al pie del Nevado Ausangate, considerado como uno de los Apus protectores del Cusco, y sus colores básicamente se deben a los distintos minerales que la cubren, que junto a las extremas condiciones climáticas han dado origen a una explosión de colores en la montaña."
+      },
+      {
+          "name": "Desierto Huacachina",
+          "image": "https://images.pexels.com/photos/7435822/pexels-photo-7435822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Este desierto subtropical es conocido como el Oasis de América y en él vas a encontrar un pequeño pueblo y una hermosa laguna rodeada de palmeras, malecones y enormes dunas. Además, cuando visites la Huacachina asegúrate de dar un paseo en buggy por el desierto, será una experiencia llena de increíbles paisajes y sobre todo de adrenalina."
+      }
+  ]
+  },
+  {
+    "name": "Colombia",
+    "image": "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra del cafe",
+		"experiences":"Ballenatos",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Brasil",
+    "image": "https://images.pexels.com/photos/13911606/pexels-photo-13911606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra del Carnaval",
+		"experiences":"Zambar",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Francia",
+    "image": "https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "Europa",
+		"description":"Tierra del Croissant",
+		"experiences":"Museo del Louvre",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "Republica Dominicana",
+    "image": "https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra de Caribe",
+		"experiences":"Playa",
+    "destinies":[
+      {
+       "name":"Bariloche",
+       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
+       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+      },
+      {
+       "name": "Buenos Aires",
+       "description":
+         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
+     },
+     {
+       "name": "Puerto Iguazú",
+       "description":
+         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
+       "image":
+         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
+     },
+     {
+       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
+       "description":
+         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
+       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
+     }
+     ]
+  },
+  {
+    "name": "México",
+    "image": "https://images.pexels.com/photos/16134906/pexels-photo-16134906/free-photo-of-san-jose-iturbide.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"continent": "America",
+		"description":"Tierra del Guacamole",
+		"experiences":"Tacos",
+    "destinies":[
+      {
+          "name": "Chichén Itzá",
+          "image": "https://images.pexels.com/photos/17182240/pexels-photo-17182240/free-photo-of-punto-de-referencia-cielo-azul-piramide-monumento.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Distintos pueblos ocuparon esta ciudad, pero fue la civilización maya la que dejó la huella más importante, siendo las construcciones principales que perduran las del período que va del 800 al 1100. La más importante de todas es el Templo de Kukulcán, imagen más representativa cuando nos referimos a 'las pirámides de México', elegida como una de las 7 Maravillas del mundo moderno."
+      },
+      {
+          "name": "Uxmal",
+          "image": "https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/rlzse4rr4shpjxwy0exf",
+          "description": "La estructura que primero va a llamar tu atención seguramente sea la Pirámide del Adivino. Subir sus 30 metros de altura por los empinados escalones y apreciar la vista de todo el complejo, es una experiencia inolvidable."
+      },
+      {
+          "name": "Playas de la Riviera Maya",
+          "image": "https://images.pexels.com/photos/2631613/pexels-photo-2631613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Cancún, Playa del Carmen y Tulum son los puntos más famosos de esta costa, donde no solo vas a poder relajarte en playas de postal sino que además son excelente base para recorrer las maravillas de la zona"
+      },
+      {
+          "name": "Cenote de Ik Kil",
+          "image": "https://images.pexels.com/photos/12333464/pexels-photo-12333464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Con un diámetro de 60 metros y una profundidad de 43 metros, Ik Kil es uno de los cenotes más conocidos en la península de Yucatán. Rodeado de selvática vegetación, largas raíces de árboles cuelgan buscando el agua dentro del cenote. "
+      }
+  ]
+  }
+]

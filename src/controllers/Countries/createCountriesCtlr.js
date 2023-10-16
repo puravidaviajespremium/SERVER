@@ -1,11 +1,12 @@
-const { Country } = require("../../db.js");
+const { Country, Destiny } = require("../../db.js");
 
 const createCountries = async (
   name,
   image,
   description,
   experiences,
-  continent
+  continent,
+  destinies
 ) => {
   const existingCountry = await Country.findOne({
     where: {
@@ -26,7 +27,12 @@ const createCountries = async (
       experiences,
       continent,
     });
-
+    destinies
+      ? destinies.forEach(async (d) => {
+          const newDestiny = await Destiny.create(d);
+          await newCountry.addDestiny(newDestiny);
+        })
+      : console.log("No hay destinos populares");
     return newCountry;
   }
 };
