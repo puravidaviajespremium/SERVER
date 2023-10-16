@@ -31,7 +31,7 @@ module.exports = (sequelize) => {
         },
       },
       experiences: {
-        type: DataTypes.JSON,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       continent: {
