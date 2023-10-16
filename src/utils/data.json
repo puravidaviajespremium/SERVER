@@ -1,7 +1,7 @@
 [
   {
     "name": "Costa Rica",
-    "image": "https://images.pexels.com/photos/9482124/pexels-photo-9482124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/9482124/pexels-photo-9482124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Es un país de América Central con una geografía accidentada, que incluye bosques tropicales y costas en el Caribe y el Pacífico. Aunque su capital, San José, es hogar de instituciones culturales, como el Museo del Oro Precolombino, Costa Rica es conocida por sus playas, sus volcanes y su biodiversidad",
 		"experiences":"Buceo",
@@ -16,14 +16,14 @@
       "description":
         "Esta playa de arena blanca forma parte del Parque Nacional Manuel Antonio. Podrá disfrutar de un hermoso sitio de arena blanca, agua cristalina y árboles que dan sombra en la orilla.",
       "image":
-        "https://images.pexels.com/photos/13501101/pexels-photo-13501101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "https://images.pexels.com/photos/13501101/pexels-photo-13501101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920"
     },
     {
       "name": "Cataratas de la Fortuna",
       "description":
         "Se esconde un pedacito de naturaleza, de oro verde, la que le da el sustento a nuestra comunidad y nos hace sentir orgullosos por su belleza, la Catarata Río Fortuna",
       "image":
-        "https://images.pexels.com/photos/14580735/pexels-photo-14580735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "https://images.pexels.com/photos/14580735/pexels-photo-14580735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920"
     },
     {
       "name": "Cahuita National Park",
@@ -35,7 +35,7 @@
   },
   {
     "name": "Argentina",
-    "image": "https://images.pexels.com/photos/8242964/pexels-photo-8242964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/18691102/pexels-photo-18691102/free-photo-of-paisaje-agua-verano-nueva-york.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Tierra de Contrastes",
 		"experiences":"Tango",
@@ -69,7 +69,7 @@
   },
   {
     "name": "Perú",
-    "image": "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Tierra de Origenes",
 		"experiences":"Trekking",
@@ -98,143 +98,123 @@
   },
   {
     "name": "Colombia",
-    "image": "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Tierra del cafe",
 		"experiences":"Ballenatos",
     "destinies":[
       {
-       "name":"Bariloche",
-       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
-       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+          "name": "Cartagena de Indias",
+          "image": "https://images.pexels.com/photos/13804522/pexels-photo-13804522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Cartagena es una ciudad costera en la costa caribeña de Colombia. Es famosa por su bien conservado centro histórico, conocido como la Ciudad Amurallada, que está rodeado por impresionantes murallas coloniales. Los visitantes pueden explorar calles empedradas, disfrutar de la arquitectura colonial, y visitar el Castillo de San Felipe de Barajas, una impresionante fortaleza."
       },
       {
-       "name": "Buenos Aires",
-       "description":
-         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
-     },
-     {
-       "name": "Puerto Iguazú",
-       "description":
-         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
-     },
-     {
-       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
-       "description":
-         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
-       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
-     }
-     ]
+          "name": "Parque Nacional Natural Tayrona",
+          "image": "https://images.pexels.com/photos/4552230/pexels-photo-4552230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Este parque nacional se encuentra en la costa norte de Colombia, cerca de Santa Marta. Tayrona es conocido por sus hermosas playas, selva tropical y senderos naturales. Los visitantes pueden disfrutar de la caminata a través de la jungla para llegar a playas como La Piscina y Arrecifes, donde pueden relajarse en un entorno paradisíaco."
+      },
+      {
+          "name": "Medellín",
+          "image": "https://images.pexels.com/photos/4150032/pexels-photo-4150032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Conocida como la Ciudad de la Eterna Primavera, Medellín es la segunda ciudad más grande de Colombia. Ofrece una variedad de atracciones, como el Parque Arvi, el Jardín Botánico y el Museo de Arte Moderno. Además, la ciudad es famosa por su transformación urbana y el sistema de transporte público innovador."
+      },
+      {
+          "name": "Villa de Leyva",
+          "image": "https://images.pexels.com/photos/13836223/pexels-photo-13836223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": " Villa de Leyva es un pueblo colonial ubicado en el altiplano cundiboyacense de Colombia. Es famoso por su arquitectura bien conservada, calles empedradas y la Plaza Mayor, una de las plazas más grandes de América Latina. Los visitantes pueden explorar museos, iglesias históricas, tiendas de artesanía y disfrutar de la atmósfera tranquila y encantadora de este lugar. Además, en las cercanías se encuentran el Parque Nacional Natural Iguaque y el desierto de la Candelaria, dos áreas naturales impresionantes para explorar. Villa de Leyva es un destino perfecto para aquellos que buscan una experiencia cultural y natural en Colombia."
+      }
+  ]
   },
   {
     "name": "Brasil",
-    "image": "https://images.pexels.com/photos/13911606/pexels-photo-13911606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/13911606/pexels-photo-13911606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Tierra del Carnaval",
 		"experiences":"Zambar",
     "destinies":[
       {
-       "name":"Bariloche",
-       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
-       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+          "name": "Río de Janeiro",
+          "image": "https://images.pexels.com/photos/2876407/pexels-photo-2876407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Río de Janeiro es famosa por su icónica estatua del Cristo Redentor, ubicada en la cima del Monte Corcovado, con impresionantes vistas de la ciudad. Las playas de Copacabana e Ipanema son mundialmente conocidas, y el carnaval de Río es uno de los eventos más grandes y vibrantes del mundo."
       },
       {
-       "name": "Buenos Aires",
-       "description":
-         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
-     },
-     {
-       "name": "Puerto Iguazú",
-       "description":
-         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
-     },
-     {
-       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
-       "description":
-         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
-       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
-     }
-     ]
+          "name": "Foz do Iguaçu",
+          "image": "https://images.pexels.com/photos/1640416/pexels-photo-1640416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Este destino se encuentra en la frontera entre Brasil, Argentina y Paraguay y es conocido por sus majestuosas Cataratas del Iguazú, consideradas una de las maravillas naturales del mundo. Los visitantes pueden explorar el Parque Nacional do Iguaçu y disfrutar de las impresionantes vistas de las cascadas."
+      },
+      {
+          "name": "Salvador de Bahía",
+          "image": "https://images.pexels.com/photos/12989844/pexels-photo-12989844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "description": "Salvador es famosa por su rica herencia cultural afrobrasileña. El Pelourinho es su centro histórico, lleno de coloridas casas coloniales, iglesias y calles adoquinadas. También es conocida por su música y danza, como el samba de roda y el capoeira."
+      },
+      {
+          "name": "Amazonia",
+          "image": "https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/bzngtenckauetvefmdai",
+          "description": "La región amazónica de Brasil es una de las áreas más biodiversas del mundo, con una selva tropical exuberante, ríos y una amplia variedad de vida silvestre. Los viajeros pueden explorar la selva, realizar excursiones en canoa, avistar aves exóticas y aprender sobre la cultura indígena."
+      }
+  ]
   },
   {
     "name": "Francia",
-    "image": "https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "Europa",
 		"description":"Tierra del Croissant",
 		"experiences":"Museo del Louvre",
     "destinies":[
       {
-       "name":"Bariloche",
-       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
-       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+          "name":"Rio Sena",
+          "image":"https://images.pexels.com/photos/18455466/pexels-photo-18455466/free-photo-of-ciudad-torre-eiffel-punto-de-referencia-paris.jpeg",
+          "description":"El Sena es un río francés de 774,76 kilómetros de largo, que fluye en la cuenca de París y aguas en particular Troyes, París, Rouen y Le Havre. "
       },
       {
-       "name": "Buenos Aires",
-       "description":
-         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
-     },
-     {
-       "name": "Puerto Iguazú",
-       "description":
-         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
-     },
-     {
-       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
-       "description":
-         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
-       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
-     }
-     ]
+          "name":"Tour Museo de Louvre",
+          "image":"https://images.pexels.com/photos/6194357/pexels-photo-6194357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "description": "El Louvre es uno de los museos más grandes del mundo. En concreto, se ubica en el distrito 1, es decir, en pleno centro de París y recoge casi 35.000 objetos en sus 60.600 m² que abarcan desde la Prehistoria hasta el siglo XXI. Gracias a que cada año más de 8 millones de personas entran en él, se considera el museo más visitado del mundo."
+      },
+      {
+          "name":"Catedral de Notre Dame",
+          "image":"https://images.pexels.com/photos/705766/pexels-photo-705766.jpeg",
+          "description":"es una catedral de culto católico, sede de la archidiócesis de París, la capital de Francia. Dedicada a la Virgen María, madre de Jesucristo, se sitúa en la pequeña isla de la Cité, rodeada por las aguas del río Sena."
+      },
+      {
+          "name":"Torre Eiffel",
+          "image":"https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg",
+          "description": "Construida en 1889 para la Exposición Universal, la Torre Eiffel se convirtió en el principal símbolo de París y es el monumento más visitado del mundo."
+      }
+  ]
   },
   {
     "name": "Republica Dominicana",
-    "image": "https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Tierra de Caribe",
 		"experiences":"Playa",
-    "destinies":[
+    "destinies":[ 
       {
-       "name":"Bariloche",
-       "description":"Disfruta de un tour de 10h por la carretera de los Siete Lagos en un viaje panorámico por carretera en el tramo de la Ruta Nacional 40 que une San Martín de los Andes y Villa La Angostura. Déjate llevar por la belleza de los paisajes naturales de la zona.",
-       "image":"https://cdn.getyourguide.com/img/tour/5e46de9ef3d3f.jpeg/98.jpg"
+          "name":"playas de Bávaro",
+          "image":"https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "description":"La Playa Bávaro es una de las mejores playas de República Dominicana. Si alguna vez has soñado con aguas cristalinas, arena fina y blanca y un paisaje lleno de palmeras, entonces has soñado con esta playa paradisíaca situada en Punta Cana,"
       },
       {
-       "name": "Buenos Aires",
-       "description":
-         "Vive la magia del tango en su cuna con un espectáculo en vivo en Buenos Aires y una cena opcional de 3 platos y bebidas. Maravíllate con los elaborados trajes y el acompañamiento de una banda en directo.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/ad074f959072ab4e.jpeg/98.jpg"
-     },
-     {
-       "name": "Puerto Iguazú",
-       "description":
-         "Explora las Cataratas del Iguazú con increíbles vistas de la Garganta del Diablo. Monta en un tren ecológico para llegar a varias pasarelas que ofrecen diferentes perspectivas sobre las cascadas de agua.",
-       "image":
-         "https://cdn.getyourguide.com/img/tour/5cb7072740143.jpeg/98.jpg"
-     },
-     {
-       "name": "El Calafate: Glaciar Perito Moreno y navegación en velero",
-       "description":
-         "Sumerge tus sentidos en la magia de la naturaleza viajando desde El Calafate durante un día para visitar el glaciar Perito Moreno. Contempla de cerca el glaciar y navega durante una hora por el Lago Argentino.",
-       "image":"https://cdn.getyourguide.com/img/tour/6442aec8c9e9d.png/98.jpg"
-     }
-     ]
+          "name":"Punta Cana",
+          "image":"https://images.pexels.com/photos/2598675/pexels-photo-2598675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "description":"Punta Cana es considerada uno de los mayores puntos de atracción turística de la República Dominicana, ya que ofrece alrededor de 50 Km."
+      },
+      {
+          "name":"Playa arena Gorda",
+          "image":"https://images.pexels.com/photos/3703511/pexels-photo-3703511.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "description":"Se trata de una de las playas de arena blanca más largas de Punta Cana, bañada por aguas turquesa a lo largo de toda la costa."
+      },
+      {
+          "name":"Playa Blanca",
+          "image":"https://images.pexels.com/photos/14629414/pexels-photo-14629414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          "description":"Playa Blanca se encuentra en una ubicación privilegiada, rodeada de una exuberante vegetación tropical."
+      }
+  ]
   },
   {
     "name": "México",
-    "image": "https://images.pexels.com/photos/16134906/pexels-photo-16134906/free-photo-of-san-jose-iturbide.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "https://images.pexels.com/photos/16134906/pexels-photo-16134906/free-photo-of-san-jose-iturbide.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
 		"description":"Tierra del Guacamole",
 		"experiences":"Tacos",
