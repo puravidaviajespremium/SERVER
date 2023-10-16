@@ -37,7 +37,7 @@
     "name": "Argentina",
     "image": "https://images.pexels.com/photos/18691102/pexels-photo-18691102/free-photo-of-paisaje-agua-verano-nueva-york.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
-		"description":"Tierra de Contrastes",
+		"description":"El asado, el fútbol, el tango, el mate, el Malbec, el dulce de leche, el choripán, el Obelisco. Somos eso, pero también somos mucho más que eso.  El café de la esquina, el tiempo innegociable para un encuentro con amigos, los domingos en familia, la avenida que no duerme, las noches de rock.\nLas pampas infinitas, los gauchos, los festivales en los pueblos, el folclore.  La Patagonia remota y misteriosa y el norte rebosante de sol y de colores. La selva, el desierto, la cumbre más alta de América y el Fin del Mundo. Todas las personalidades y caracteres que pueden anidar en esos paisajes, en esos climas.\nEfusivos, divertidos, sociables, amigables, apasionados. Esas son algunas de las palabras que usan para describirnos.",
 		"experiences":"Tango",
     "destinies":[
       {
@@ -71,7 +71,7 @@
     "name": "Perú",
     "image": "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
-		"description":"Tierra de Origenes",
+		"description":"Perú es un país situado en la costa oeste de América del Sur, conocido por su rica herencia histórica, su diversidad geográfica y su cultura única. La capital de Perú es Lima. El país es famoso por su antigua civilización inca y alberga sitios arqueológicos impresionantes, como Machu Picchu, que es considerado una de las maravillas del mundo.Perú tiene una diversidad geográfica impresionante, que incluye la costa, la sierra y la selva amazónica, ofreciendo una amplia gama de paisajes y actividades al aire libre, desde playas hasta montañas y selvas.",
 		"experiences":"Trekking",
     "destinies":[
       {
@@ -100,7 +100,7 @@
     "name": "Colombia",
     "image": "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
-		"description":"Tierra del cafe",
+		"description":"Bienvenidos a Colombia, un país de contrastes inolvidables. Desde las cumbres nevadas de los Andes hasta las cálidas playas del Caribe, Colombia te ofrece una experiencia única. Descubre la magia de sus ciudades coloniales como Cartagena y Villa de Leyva, donde las calles empedradas y las plazas históricas te transportarán en el tiempo. Sumérgete en la selva amazónica y maravíllate con la diversidad de flora y fauna que alberga. La hospitalidad de su gente, la música que llena el aire y la gastronomía que te cautivará, harán que tu visita a Colombia sea inolvidable. Desde la vibrante Bogotá hasta la belleza natural de San Agustín y el encanto de Medellín, Colombia te espera con los brazos abiertos para ofrecerte una experiencia única.",
 		"experiences":"Ballenatos",
     "destinies":[
       {
@@ -129,7 +129,7 @@
     "name": "Brasil",
     "image": "https://images.pexels.com/photos/13911606/pexels-photo-13911606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
-		"description":"Tierra del Carnaval",
+		"description":"¡Bienvenidos a Brasil, el país que despierta tus sentidos y despierta tu alma! Desde las impresionantes playas de arena dorada de Copacabana hasta el misterio de la selva amazónica, Brasil es una tierra de maravillas naturales y culturales. Déjate seducir por el ritmo apasionado del samba en las calles de Río de Janeiro durante el Carnaval, donde la música y el baile llenan el aire. Explora la majestuosidad de las Cataratas del Iguazú, una de las maravillas naturales más grandiosas de la Tierra. Disfruta de la esencia de Bahía en Salvador, donde la cultura afrobrasileña y la música en vivo te envolverán. Brasil es el país de la diversidad, la belleza y la pasión, y te invitamos a descubrirlo en cada rincón, desde la vibrante São Paulo hasta la relajante costa de Bahía. ¡Ven y déjate llevar por la emoción de Brasil!",
 		"experiences":"Zambar",
     "destinies":[
       {
@@ -158,7 +158,7 @@
     "name": "Francia",
     "image": "https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "Europa",
-		"description":"Tierra del Croissant",
+		"description":"Francia es un país ubicado en Europa Occidental, conocido por su rica historia, cultura y paisajes variados. Es famosa por la Torre Eiffel en París, su capital, así como por su gastronomía, que incluye vinos, quesos y platillos gourmet. Francia es también reconocida por su influencia en el mundo de la moda y el arte, y alberga museos de renombre como el Louvre. El país tiene una larga tradición de literatura, filosofía y ciencia, y ha desempeñado un papel importante en la política europea e internacional a lo largo de los siglos. Su geografía varía desde playas en la costa mediterránea hasta montañas en los Alpes y los Pirineos, así como campos de lavanda en la Provenza.",
 		"experiences":"Museo del Louvre",
     "destinies":[
       {
@@ -187,7 +187,7 @@
     "name": "Republica Dominicana",
     "image": "https://images.pexels.com/photos/2598683/pexels-photo-2598683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
-		"description":"Tierra de Caribe",
+		"description":"La República Dominicana es un país situado en el Caribe, en la isla de La Española. Es conocida por sus hermosas playas, un clima cálido y una rica cultura. La capital es Santo Domingo, que alberga la primera catedral y el primer castillo construidos en América. El país es famoso por su música, especialmente el merengue y la bachata, que son géneros de baile y música populares en todo el mundo. La República Dominicana es un destino turístico importante, con resorts en la costa, parques nacionales, y la oportunidad de explorar la vida marina y la historia colonial. Además, el país es conocido por su producción de tabaco y ron, siendo uno de los principales exportadores de estos productos en el mundo.",
 		"experiences":"Playa",
     "destinies":[ 
       {
@@ -216,7 +216,7 @@
     "name": "México",
     "image": "https://images.pexels.com/photos/16134906/pexels-photo-16134906/free-photo-of-san-jose-iturbide.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1920",
 		"continent": "America",
-		"description":"Tierra del Guacamole",
+		"description":"México es un país ubicado en América del Norte, conocido por su diversidad cultural, historia rica y hermosos paisajes. La Ciudad de México es la capital y una de las ciudades más grandes del mundo. México es famoso por su gastronomía, que incluye platos como los tacos, el mole y el guacamole, así como su tequila y mezcal. El país tiene una larga historia que incluye civilizaciones antiguas como los aztecas y los mayas, y numerosos sitios arqueológicos, como Chichén Itzá y Teotihuacán.",
 		"experiences":"Tacos",
     "destinies":[
       {
