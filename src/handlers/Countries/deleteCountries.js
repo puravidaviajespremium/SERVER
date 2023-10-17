@@ -4,7 +4,7 @@ const deleteC = require("../../controllers/Countries/deleteCountriesCtlr")
 
 
 const deleteCountryHandler = async (req, res) => {
-  const {id} = req.query;
+  const {id} = req.params;
 
   try {
     if(id){

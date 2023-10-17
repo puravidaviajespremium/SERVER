@@ -4,7 +4,7 @@ const updateCountries = require("../../controllers/Countries/updateCountriesCtlr
 
 const updateCountriesHandler = async (req, res) => {
   const info = req.body
-  const {id} = req.query
+  const {id} = req.params
 
   try{
     if(info.name && info.continent && info.image && info.experiences){

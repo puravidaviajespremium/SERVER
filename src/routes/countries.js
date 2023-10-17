@@ -5,6 +5,7 @@ const deleteCountries = require("../handlers/Countries/deleteCountries");
 const updateCountries = require("../handlers/Countries/updateCountries");
 const createCountriesMasivo = require("../handlers/Countries/createMasivo");
 const getCountriesById = require("../handlers/Countries/getCountryById");
+
 const routerCountries = Router();
 
 routerCountries.get("/all", getCountries); // terminada
@@ -15,8 +16,8 @@ routerCountries.post("/createmasivo", createCountriesMasivo);
 
 routerCountries.get("/country/:id", getCountriesById);
 
-routerCountries.put("/update", updateCountries);
+routerCountries.put("/update/:id", updateCountries);
 
-routerCountries.get("/delete", deleteCountries); // terminada - MIRAR con el grupo 
+routerCountries.delete("/delete/:id", deleteCountries); // terminada - MIRAR con el grupo /
 
 module.exports = routerCountries;
