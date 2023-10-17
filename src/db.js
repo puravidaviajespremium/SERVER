@@ -39,7 +39,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 const { Country, Destiny } = sequelize.models;
 
 // Aca vendrian las relaciones
-Country.hasMany(Destiny);
+Country.hasMany(Destiny, { onDelete: 'CASCADE'});
 Destiny.belongsTo(Country);
 
 // Genre.belongsToMany(Videogame, {
