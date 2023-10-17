@@ -34,9 +34,9 @@ module.exports = (sequelize) => {
       telephone: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-          is: /^\d{10}$/,
-        },
+        // validate: {
+        //   is: /^\d{10}$/,
+        // },
       },
       comment: {
         type: DataTypes.STRING,
