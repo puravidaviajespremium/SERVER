@@ -38,12 +38,8 @@ module.exports = (sequelize) => {
         //   is: /^\d{10}$/,
         // },
       },
-      comment: {
+      countryOrigin: {
         type: DataTypes.STRING,
-        validate: {
-          min: 20,
-          max: 200,
-        },
       },
       membershipStatus: {
         type: DataTypes.ENUM,
