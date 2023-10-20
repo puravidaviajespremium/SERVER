@@ -11,6 +11,7 @@ const routerCountries = require("./routes/countries");
 const isLogged = require("./middlewares/isLogged");
 const errors = require("./middlewares/errors");
 const sequelize = require("./db");
+const nodemailerRoute = require("./routes/nodemailer");
 
 //Middlewares
 server.use(isLogged);
@@ -53,6 +54,8 @@ server.use("/users", routerUsers);
 server.use("/countries", routerCountries);
 
 server.use("/clients", routerClients);
+
+server.use("/nodemailer", nodemailerRoute);
 
 // // Error catching endware.
 server.use(errors);
