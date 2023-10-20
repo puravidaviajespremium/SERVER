@@ -27,6 +27,7 @@ module.exports = (sequelize) => {
       email: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
         validate: {
           isEmail: true,
         },
@@ -34,12 +35,17 @@ module.exports = (sequelize) => {
       telephone: {
         type: DataTypes.STRING,
         allowNull: false,
-        // validate: {
-        //   is: /^\d{10}$/,
-        // },
+        validate: {
+          is: /^\d{9,18}$/,
+        },
       },
       countryOrigin: {
         type: DataTypes.STRING,
+        allowNull: false,
+      },
+      destinationCountry:{
+        type: DataTypes.STRING,
+        defaultValue: "No asignado"
       },
       membershipStatus: {
         type: DataTypes.ENUM,

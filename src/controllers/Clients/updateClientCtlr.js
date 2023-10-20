@@ -7,6 +7,7 @@ const updateClient = async (id, client) => {
     lastName,
     email,
     telephone,
+    destinationCountry,
     membershipStatus,
     contactStatus,
   } = client;
@@ -22,6 +23,7 @@ const updateClient = async (id, client) => {
         lastName,
         email,
         telephone,
+        destinationCountry,
         membershipStatus,
         contactStatus,
       },
