@@ -1,8 +1,14 @@
 const { Client } = require("../../db.js");
 
-const createClient = async (firstName, lastName, email, telephone, comment) => {
+const createClient = async (
+  firstName, 
+  lastName, 
+  email, 
+  telephone, 
+  countryOrigin, 
+  destinationCountry) => {
   const existingClient = await Client.findOne({
-    where: { firstName, lastName },
+    where: { email },
   });
 
   if (existingClient) {
@@ -14,7 +20,8 @@ const createClient = async (firstName, lastName, email, telephone, comment) => {
     lastName,
     email,
     telephone,
-    comment,
+    countryOrigin, 
+    destinationCountry
   });
 
   return newClient;
