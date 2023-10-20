@@ -8,6 +8,7 @@ const server = express();
 const routerUsers = require("./routes/users");
 const routerClients = require("./routes/clients");
 const routerCountries = require("./routes/countries");
+const routerReviews = require("./routes/reviews")
 const isLogged = require("./middlewares/isLogged");
 const errors = require("./middlewares/errors");
 const sequelize = require("./db");
@@ -53,6 +54,8 @@ server.use("/users", routerUsers);
 server.use("/countries", routerCountries);
 
 server.use("/clients", routerClients);
+
+server.use("/review", routerReviews)
 
 // // Error catching endware.
 server.use(errors);
