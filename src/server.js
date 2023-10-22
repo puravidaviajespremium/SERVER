@@ -8,9 +8,14 @@ const server = express();
 const routerUsers = require("./routes/users");
 const routerClients = require("./routes/clients");
 const routerCountries = require("./routes/countries");
+const routerAuthentication = require("./routes/authentication.js"); //Auth0
+const routerReviews = require("./routes/reviews");
 const isLogged = require("./middlewares/isLogged");
 const errors = require("./middlewares/errors");
 const sequelize = require("./db");
+const nodemailerRoute = require("./routes/nodemailer");
+const { auth } = require("express-oauth2-jwt-bearer"); //Auth0
+const paypalRoute = require("./routes/paypal");
 
 //Middlewares
 server.use(isLogged);
@@ -43,6 +48,15 @@ server.use((req, res, next) => {
 //   }
 // })();
 
+// const jwtCheck = auth({
+//   //Auth0
+//   audience: "https://puravidaapireact",
+//   issuerBaseURL: "https://dev-mnltohiryggl7674.us.auth0.com/",
+//   tokenSigningAlg: "RS256",
+// });
+
+// server.use(jwtCheck);
+
 //rutas
 server.get("/", (req, res) => {
   res.send("Bienvenido");
@@ -54,7 +68,28 @@ server.use("/countries", routerCountries);
 
 server.use("/clients", routerClients);
 
+server.use("/authentication", routerAuthentication); //rutas Auth0
+
+server.use("/review", routerReviews);
+
+server.use("/nodemailer", nodemailerRoute);
+
+server.use("/paypal", paypalRoute);
+
 // // Error catching endware.
 server.use(errors);
+
+// Errors Auth0
+server.use((req, res, next) => {
+  const error = new Error("No encontrado");
+  error.status = 404;
+  next(error);
+});
+
+server.use((error, req, res, next) => {
+  const status = error.status || 500;
+  const message = error.message || "Error interno del servidor";
+  res.status(status).send(message);
+});
 
 module.exports = server;

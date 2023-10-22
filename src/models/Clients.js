@@ -27,6 +27,7 @@ module.exports = (sequelize) => {
       email: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
         validate: {
           isEmail: true,
         },
@@ -35,15 +36,16 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          is: /^\d{10}$/,
+          is: /^\d{9,18}$/,
         },
       },
-      comment: {
+      countryOrigin: {
         type: DataTypes.STRING,
-        validate: {
-          min: 20,
-          max: 200,
-        },
+        allowNull: false,
+      },
+      destinationCountry:{
+        type: DataTypes.STRING,
+        defaultValue: "No asignado"
       },
       membershipStatus: {
         type: DataTypes.ENUM,
