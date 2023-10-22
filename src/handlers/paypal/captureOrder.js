@@ -16,8 +16,9 @@ const captureOrder = async (req, res) => {
     }
   );
 
-  console.log(response);
-
-  res.json(response.data);
+  // console.log(response);
+  // res.json(response.data);
+  res.redirect(`http://localhost:5173/payment/success?name=${response.data.purchase_units[0].shipping.name.full_name}`)
 };
+
 module.exports = captureOrder;
