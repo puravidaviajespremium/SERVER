@@ -24,8 +24,8 @@ const captureOrder = async (req, res) => {
     response.data.purchase_units[0].payments.captures[0].amount.value;
 
   reciboPago(name, gmail, id, value);
-  res.json(response.data);
-  // res.redirect(`http://localhost:5173/payment/success?name=${name}`);
+  //res.json(response.data);
+  res.redirect(`http://localhost:5173/payment/success?name=${name}`);
 };
 
 module.exports = captureOrder;
