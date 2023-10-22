@@ -14,7 +14,7 @@ const contacto = async (req, res) => {
   
       <p> A la brevedad nos pondremos en contacto con ud.</p>
   
-      <button>Ingresar a la Pagina</button>
+      <a href="http://puravidaviajespremium.com"><button>Ingresar a la Pagina</button></a>
       `,
   });
 
