@@ -1,18 +1,19 @@
 const { Client } = require("../../db.js");
 
 const createClient = async (
-  firstName, 
-  lastName, 
-  email, 
-  telephone, 
-  countryOrigin, 
-  destinationCountry) => {
+  firstName,
+  lastName,
+  email,
+  telephone,
+  countryOrigin,
+  destinationCountry
+) => {
   const existingClient = await Client.findOne({
     where: { email },
   });
 
   if (existingClient) {
-    throw new Error("El usuario ya existe!!");
+    // throw new Error("El usuario ya existe!!");
   }
 
   const newClient = await Client.create({
@@ -20,8 +21,8 @@ const createClient = async (
     lastName,
     email,
     telephone,
-    countryOrigin, 
-    destinationCountry
+    countryOrigin,
+    destinationCountry,
   });
 
   return newClient;
