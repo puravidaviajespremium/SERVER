@@ -74,7 +74,8 @@ server.use("/review", routerReviews);
 
 server.use("/nodemailer", nodemailerRoute);
 
-server.use("/paypal", paypalRoute);
+ server.use("/paypal", paypalRoute);
+
 
 // // Error catching endware.
 server.use(errors);
