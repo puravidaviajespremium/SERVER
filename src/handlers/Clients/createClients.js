@@ -3,23 +3,11 @@ const createClient = require("../../controllers/Clients/createClientsCtlr.js")
 const createClientsHandler = async (req, res) => {
     
     try {
-        const {
-            firstName, 
-            lastName,
-            email, 
-            telephone, 
-            countryOrigin, 
-            destinationCountry} = req.body;
+        const { email } = req.body;
 
-        if(!firstName, !lastName, !email, !telephone, !countryOrigin){throw new Error("Faltan Datos!!")};
+        if( !email ){throw new Error("Faltan Datos!!")};
         
-        newClient = await createClient(
-            firstName, 
-            lastName, 
-            email,
-            telephone, 
-            countryOrigin, 
-            destinationCountry);
+        newClient = await createClient( email );
 
         res.status(201).send(newClient);
     } catch (error) {
