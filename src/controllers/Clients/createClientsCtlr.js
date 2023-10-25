@@ -12,20 +12,19 @@ const createClient = async (
     where: { email },
   });
 
-  if (existingClient) {
+  if (!existingClient) {
     // throw new Error("El usuario ya existe!!");
+    const newClient = await Client.create({
+      firstName,
+      lastName,
+      email,
+      telephone,
+      countryOrigin,
+      destinationCountry,
+    });
   }
 
-  const newClient = await Client.create({
-    firstName,
-    lastName,
-    email,
-    telephone,
-    countryOrigin,
-    destinationCountry,
-  });
-
-  return newClient;
+  return newClient ? newClient : existingClient;
 };
 
 module.exports = createClient;
