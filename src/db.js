@@ -36,7 +36,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
 //console.log(sequelize.models);
-const { Country, Destiny, Client, HistoryClient } = sequelize.models;
+const { Country, Destiny, Client, HistoryClient, User } = sequelize.models;
 
 // Aca vendrian las relaciones
 Country.hasMany(Destiny, { onDelete: "CASCADE" });
@@ -44,6 +44,10 @@ Destiny.belongsTo(Country);
 
 Client.hasMany(HistoryClient, { onDelete: "CASCADE" });
 HistoryClient.belongsTo(Client);
+
+User.hasMany(Client);
+Client.belongsTo(User);
+
 // Genre.belongsToMany(Videogame, {
 //   through: "videogame_genre",
 //   timestamps: false,

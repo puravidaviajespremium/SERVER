@@ -1,16 +1,19 @@
-const { Router } = require("express");
-const routerUsers = Router();
-const getUsers = require("../handlers/users/getUsers");
-const createUsers = require("../handlers/users/createUsers");
-const updateUsers = require("../handlers/users/updateUsers");
-const deleteUsers = require("../handlers/users/deleteUsers");
+let { Router } = require("express");
+let routerUsers = Router();
+let getUsers = require("../handlers/users/getUsers");
+let createUsers = require("../handlers/users/createUsers");
+let updateUsers = require("../handlers/users/updateUsers");
+let deleteUsers = require("../handlers/users/deleteUsers");
+let getUserById = require("../handlers/users/getUserById")
 
-routerUsers.get("/all", getUsers);
+routerUsers.get("/all", getUsers); //OK
 
-routerUsers.get("/create", createUsers);
+routerUsers.post("/create", createUsers); //OK
 
-routerUsers.get("/update", updateUsers);
+routerUsers.put("/update/:id", updateUsers); //OK
 
-routerUsers.get("/delete", deleteUsers);
+routerUsers.delete("/delete/:id", deleteUsers); //OK
+
+routerUsers.get("/:id", getUserById); //OK
 
 module.exports = routerUsers;
