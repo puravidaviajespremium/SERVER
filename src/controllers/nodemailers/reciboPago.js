@@ -14,7 +14,7 @@ const reciboPago = async (name, gmail, id, value) => {
         
             <p> El mismo, se pondra en contacto a la brevedad con usted.</p>
         
-            <a href="http://puravidaviajespremium.com"><button>Ingresar a la Pagina</button></a>
+            <a href="https://www.viajespuravidapremium.com/"><button>Ingresar a la Pagina</button></a>
             `,
   });
 };

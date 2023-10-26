@@ -1,7 +1,7 @@
 let { User } = require("../../db");
 
 const createUser = async (
-  name,
+  firstName,
   lastName,
   email,
   telephone,
@@ -17,12 +17,12 @@ const createUser = async (
   }
 
   const newUser = await User.create({
-    name,
+    firstName,
     lastName,
     email,
     telephone,
     isBlocked,
-    userStatus
+    userStatus,
   });
 
   return newUser;

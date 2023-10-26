@@ -1,12 +1,17 @@
 const fs = require("fs/promises");
-const { pathMasivo } = require("../../utils/utils.js");
-const { Country, Destiny } = require("../../db.js");
+const { pathMasivo, pathMasivoUsers } = require("../../utils/utils.js");
+const { Country, Destiny, User } = require("../../db.js");
 const {
   createCountries,
 } = require("../../controllers/Countries/createCountriesCtlr.js");
 
 const createCountriesMasivo = async (req, res) => {
   try {
+    const responseUsers = await fs.readFile(pathMasivoUsers());
+    const datausers = JSON.parse(responseUsers);
+
+    const newUsers = await User.bulkCreate(datausers);
+
     const response = await fs.readFile(pathMasivo());
     const data = JSON.parse(response);
 

@@ -43,10 +43,6 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      destinationCountry:{
-        type: DataTypes.STRING,
-        defaultValue: "No asignado"
-      },
       membershipStatus: {
         type: DataTypes.ENUM,
         values: ["Plata", "Dorado", "Diamante"],
@@ -63,7 +59,6 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         defaultValue: "Cliente",
       },
-      //PREFERENCIAS/GUSTOS más adelante.
     },
     { timestamps: false },
     { paranoid: true }

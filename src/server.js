@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const cors = require("cors");
 const server = express();
+require("dotenv").config();
+const { AUTH0_ISSUER_BASE_URL, URL_BASE, AUTH0_CLIENT_ID, SESSION_SECRET } =
+  process.env;
 
 const routerUsers = require("./routes/users");
 const routerClients = require("./routes/clients");
@@ -14,8 +17,18 @@ const isLogged = require("./middlewares/isLogged");
 const errors = require("./middlewares/errors");
 const sequelize = require("./db");
 const nodemailerRoute = require("./routes/nodemailer");
-const { auth } = require("express-oauth2-jwt-bearer"); //Auth0
+// const { auth } = require("express-oauth2-jwt-bearer"); //Auth0
 const paypalRoute = require("./routes/paypal");
+const { auth } = require("express-openid-connect");
+
+const configAuth0 = {
+  authRequired: false,
+  auth0Logout: true,
+  issuerBaseURL: AUTH0_ISSUER_BASE_URL,
+  baseURL: URL_BASE,
+  clientID: AUTH0_CLIENT_ID,
+  secret: SESSION_SECRET,
+};
 
 //Middlewares
 server.use(isLogged);
@@ -74,8 +87,11 @@ server.use("/review", routerReviews);
 
 server.use("/nodemailer", nodemailerRoute);
 
- server.use("/paypal", paypalRoute);
+server.use("/paypal", paypalRoute);
 
+server.use(auth(configAuth0));
+
+server.use("/authentication", routerAuthentication);
 
 // // Error catching endware.
 server.use(errors);

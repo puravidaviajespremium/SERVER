@@ -29,6 +29,13 @@ const pathMasivo = () => {
   //return path.join("\\") + "\\data.json";
   return path + "\\data.json";
 };
+const pathMasivoUsers = () => {
+  let path = __dirname;
+  //.split("\\");
+  //path.pop();
+  //return path.join("\\") + "\\data.json";
+  return path + "\\users.json";
+};
 
 const filtrar = (user) => {
   return {
@@ -47,4 +54,4 @@ const fillDB = async () => {
   await Alumno.bulkCreate(data);
 };
 
-module.exports = { agregarID, quitarID, pathMasivo, fillDB };
+module.exports = { agregarID, quitarID, pathMasivo, pathMasivoUsers, fillDB };
