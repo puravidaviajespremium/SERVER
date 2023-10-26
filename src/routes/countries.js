@@ -8,7 +8,7 @@ const getCountriesById = require("../handlers/Countries/getCountryById");
 
 const routerCountries = Router();
 
-routerCountries.get("/all", getCountries); // terminada
+routerCountries.get("/", getCountries); // terminada
 
 routerCountries.post("/create", createnewCountries); // terminada
 

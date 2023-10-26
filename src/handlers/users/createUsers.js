@@ -1,30 +1,28 @@
-let createUser = require("../../controllers/users/createUsersCtlr")
+let createUser = require("../../controllers/users/createUsersCtlr");
 
-let createUsersHandler = async (req, res) => {
-
+let createUsers = async (req, res) => {
+  let { firstName, lastName, email, telephone, isBlocked, userStatus } =
+    req.body;
   try {
-    let {
-      name,
+    if ((!firstName, !lastName, !email, !telephone, !isBlocked, !userStatus)) {
+      throw new Error("Faltan Datos!!");
+    }
+
+    const newUser = await createUser(
+      firstName,
       lastName,
       email,
       telephone,
       isBlocked,
-      userStatus } = req.body;
-
-    if (!name, !lastName, !email, !telephone, !isBlocked, !userStatus) { throw new Error("Faltan Datos!!") };
-
-    newUser = await createUser(
-      name,
-      lastName,
-      email,
-      telephone,
-      isBlocked,
-      userStatus);
+      userStatus
+    );
 
     res.status(201).send(newUser);
   } catch (error) {
+    3;
+    console.log(error);
     res.status(500).json({ error: error.message });
   }
 };
 
-module.exports = createUsersHandler;
+module.exports = createUsers;

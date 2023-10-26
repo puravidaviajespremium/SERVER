@@ -1,15 +1,8 @@
 let { User } = require("../../db.js");
 
-let updateUser = async (id, user) => {
-  const {
-    name,
-    lastName,
-    email,
-    telephone,
-    isBlocked,
-    userStatus,
-  } = user;
-
+let updateUsersCtlr = async (id, user) => {
+  const { firstName, lastName, email, telephone, isBlocked, userStatus } = user;
+  console.log(user);
   let existingUser = await User.findByPk(id);
 
   if (!existingUser || Object.keys(existingUser).length === 0) {
@@ -17,7 +10,7 @@ let updateUser = async (id, user) => {
   } else {
     userEdite = await User.update(
       {
-        name,
+        firstName,
         lastName,
         email,
         telephone,
@@ -26,8 +19,8 @@ let updateUser = async (id, user) => {
       },
       { where: { id } }
     );
-    return true;
+    return userEdite;
   }
 };
 
-module.exports = updateUser;
+module.exports = updateUsersCtlr;
