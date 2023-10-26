@@ -1,21 +1,22 @@
 const { Client } = require("../../db.js");
 const { Op } = require("sequelize");
 
-const updateClient = async (id, client) => {
+const updateClient = async (email, client) => {
   const {
     firstName,
     lastName,
-    email,
     telephone,
     destinationCountry,
     membershipStatus,
     contactStatus,
   } = client;
 
-  const existingClient = await Client.findByPk(id);
+  const existingClient = await Client.findOne({
+    where: { email }
+  });
 
   if (!existingClient || Object.keys(existingClient).length === 0) {
-    throw new Error("No existe ningún cliente con ese ID para poder editarlo.");
+    throw new Error("No existe ningún cliente con ese EMAIL para poder editarlo.");
   } else {
     clientEdite = await Client.update(
       {
@@ -27,7 +28,7 @@ const updateClient = async (id, client) => {
         membershipStatus,
         contactStatus,
       },
-      { where: { id } }
+      { where: { email } }
     );
     return true;
   }

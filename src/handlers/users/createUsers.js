@@ -1,7 +1,28 @@
-const createUsersCtlr = require("../../controllers/users/createUsersCtlr");
+let createUser = require("../../controllers/users/createUsersCtlr");
 
-module.exports = (req, res) => {
-  const newUser = "Nuevo Usuario";
-  const response = createUsersCtlr(newUser);
-  res.send(response);
+let createUsers = async (req, res) => {
+  let { firstName, lastName, email, telephone, isBlocked, userStatus } =
+    req.body;
+  try {
+    if ((!firstName, !lastName, !email, !telephone, !isBlocked, !userStatus)) {
+      throw new Error("Faltan Datos!!");
+    }
+
+    const newUser = await createUser(
+      firstName,
+      lastName,
+      email,
+      telephone,
+      isBlocked,
+      userStatus
+    );
+
+    res.status(201).send(newUser);
+  } catch (error) {
+    3;
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
 };
+
+module.exports = createUsers;

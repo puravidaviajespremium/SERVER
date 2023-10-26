@@ -10,6 +10,10 @@ module.exports = (sequelize) => {
         primaryKey: true,
         autoIncrement: true,
       },
+      date: {
+        type: DataTypes.DATEONLY,
+        allowNull: false,
+      },
       comment: {
         type: DataTypes.TEXT,
         validate: {
@@ -17,9 +21,8 @@ module.exports = (sequelize) => {
           max: 200,
         },
       },
-      date: {
-        type: DataTypes.DATEONLY,
-        allowNull: false,
+      destinationCountry: {
+        type: DataTypes.STRING,
       },
       originMsg: {
         type: DataTypes.STRING,
@@ -31,7 +34,7 @@ module.exports = (sequelize) => {
       paymentConcept: {
         type: DataTypes.STRING,
       },
-      destiny: {
+      paymentId: {
         type: DataTypes.STRING,
       },
     },

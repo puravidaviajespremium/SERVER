@@ -12,14 +12,14 @@ module.exports = (sequelize) => {
       },
       firstName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        defaultValue: "No asignado",
         validate: {
           min: 2,
         },
       },
       lastName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        defaultValue: "No asignado",
         validate: {
           min: 1,
         },
@@ -34,16 +34,12 @@ module.exports = (sequelize) => {
       },
       telephone: {
         type: DataTypes.STRING,
-        allowNull: false,
+        defaultValue: '0000000000',
         validate: {
           is: /^\d{9,18}$/,
         },
       },
       countryOrigin: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      destinationCountry:{
         type: DataTypes.STRING,
         defaultValue: "No asignado"
       },
@@ -63,7 +59,6 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         defaultValue: "Cliente",
       },
-      //PREFERENCIAS/GUSTOS más adelante.
     },
     { timestamps: false },
     { paranoid: true }
