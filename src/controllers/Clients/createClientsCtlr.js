@@ -4,88 +4,32 @@ const contactoColaborador = require("../nodemailers/contactoColaborador.js");
 let client;
 let UserId;
 
-const createClientsCtlr = async (
+const createClient = async (
   firstName,
   lastName,
   email,
   telephone,
   countryOrigin,
-  destinationCountry,
-  comment
+  destinationCountry
 ) => {
-  client = await Client.findOne({
+  const existingClient = await Client.findOne({
     where: { email },
   });
 
-  if (!client) {
-    const results = await User.findAll({
-      where: {
-        isBlocked: false,
-        userStatus: "Colaborador",
-      },
-      order: ["id"],
-      attributes: ["id", "firstName", "lastName"],
-    });
-
-    const users = results.map((u) => u.dataValues);
-
-    UserId = await Config.findByPk(1);
-
-    let userconfig;
-
-    if (!UserId) {
-      UserId = users[0].id;
-
-      userconfig = await Config.create({ UserId });
-    } else {
-      UserId = UserId.dataValues.UserId;
-
-      const usersId = users.map((u) => u.id);
-
-      if (usersId.indexOf(UserId) === users.length - 1) UserId = users[0].id;
-      else UserId = users[usersId.indexOf(UserId) + 1].id;
-
-      userconfig = await Config.update(
-        {
-          UserId,
-        },
-        { where: { id: 1 } }
-      );
-    }
-
-    client = await Client.create({
-      firstName,
-      lastName,
-      email,
-      telephone,
-      countryOrigin,
-      UserId,
-    });
+  if (existingClient) {
+    // throw new Error("El usuario ya existe!!");
   }
-  const name = firstName + " " + lastName;
-  contactoClient(email, name);
 
-  const date = new Date();
-  const originMsg = "Formulario";
-  const ClientId = client.id;
-  const payment = 0;
-  const paymentConcept = "";
-  const paymentId = "";
-
-  contactoColaborador(UserId, ClientId);
-
-  const history = await HistoryClient.create({
-    date,
-    comment,
+  const newClient = await Client.create({
+    firstName,
+    lastName,
+    email,
+    telephone,
+    countryOrigin,
     destinationCountry,
-    originMsg,
-    payment,
-    paymentConcept,
-    paymentId,
-    ClientId,
   });
 
-  return client;
+  return newClient;
 };
 
 module.exports = createClientsCtlr;
