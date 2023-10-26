@@ -6,47 +6,50 @@ const { CLIENT, SECRET, PAYPAL_API, URL_PAYPAL } = process.env;
 
 const captureOrder = async (req, res) => {
   const { token } = req.query;
+  try {
+    const response = await axios.post(
+      `${PAYPAL_API}/v2/checkout/orders/${token}/capture`,
+      {},
+      {
+        auth: {
+          username: CLIENT,
+          password: SECRET,
+        },
+      }
+    );
 
-  const response = await axios.post(
-    `${PAYPAL_API}/v2/checkout/orders/${token}/capture`,
-    {},
-    {
-      auth: {
-        username: CLIENT,
-        password: SECRET,
-      },
-    }
-  );
+    const name = response.data.purchase_units[0].shipping.name.full_name;
+    const gmail = "jhonattan1410@gmail.com";
+    const email = response.data.payment_source.paypal.email_address;
+    const paymentId = response.data.id;
+    const value =
+      response.data.purchase_units[0].payments.captures[0].amount.value;
 
-  const name = response.data.purchase_units[0].shipping.name.full_name;
-  const gmail = "jhonattan1410@gmail.com";
-  const email = response.data.payment_source.paypal.email_address;
-  const paymentId = response.data.id;
-  const value =
-    response.data.purchase_units[0].payments.captures[0].amount.value;
+    reciboPago(name, gmail, paymentId, value);
 
-  reciboPago(name, gmail, paymentId, value);
+    const responseClient = await Client.findOne({ where: { email } });
+    const ClientId = responseClient.dataValues.id;
 
-  const responseClient = await Client.findOne({ where: { email } });
-  const ClientId = responseClient.dataValues.id;
+    const date = new Date();
+    const comment = "Pago Recibido";
+    const originMsg = "PAYPAL";
+    const payment = value;
+    const paymentConcept = "Experto";
 
-  const date = new Date();
-  const comment = "Pago Recibido";
-  const originMsg = "PAYPAL";
-  const payment = value;
-  const paymentConcept = "Experto";
-
-  const history = await HistoryClient.create({
-    date,
-    comment,
-    originMsg,
-    payment,
-    paymentConcept,
-    paymentId,
-    ClientId,
-  });
-  //res.json(response.data);
-  res.redirect(`http://localhost:5173/payment/success?name=${name}`);
+    const history = await HistoryClient.create({
+      date,
+      comment,
+      originMsg,
+      payment,
+      paymentConcept,
+      paymentId,
+      ClientId,
+    });
+    //res.json(response.data);
+    res.redirect(`http://localhost:5173/payment/success?name=${name}`);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 };
 
 module.exports = captureOrder;
