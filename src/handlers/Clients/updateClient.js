@@ -7,12 +7,15 @@ const updateClientHandler = async (req, res) => {
     const { email } = req.query;
 
     try {
-        if( info.email ){
+        if (info.email) {
             const updateC = await updateClient(email, info);
-                res.status(200).send(updateC);
+            if (updateC) {
+                res.status(200).json({ data: { email, ...info } }); //editado para el admin
+            }
+
         }
     } catch (error) {
-        res.status(400).json({error: error.message});
+        res.status(400).json({ error: error.message });
     }
 };
 
