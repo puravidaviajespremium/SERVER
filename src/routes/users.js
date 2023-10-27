@@ -6,6 +6,8 @@ let deleteUsers = require("../handlers/users/deleteUsers");
 let getUserById = require("../handlers/users/getUserById");
 const createUsers = require("../handlers/users/createUsers");
 const updateUser = require("../handlers/users/updateUser");
+let getFilterUserByUserStatus = require("../handlers/users/getFilterUsersByUserStatus")
+let getFilterUserByIsBlocked = require("../handlers/users/getFilterUsersByUserIsBlocked")
 
 routerUsers.get("/", getUsers); //OK
 
@@ -16,5 +18,9 @@ routerUsers.put("/update/:id", updateUser); //OK
 routerUsers.delete("/delete/:id", deleteUsers); //OK
 
 routerUsers.get("/:id", getUserById); //OK
+
+routerUsers.get("/filter/userStatus/:userStatus", getFilterUserByUserStatus); //OK
+
+routerUsers.get("/filter/isBlocked/:isBlocked", getFilterUserByIsBlocked) //OK
 
 module.exports = routerUsers;

@@ -16,13 +16,7 @@ const updateUser = async (req, res) => {
       const updateU = await updateUsersCtlr(id, info);
 
       if (updateU)
-        res
-          .status(200)
-          .send(
-            updateU
-              ? "Datos de Usuario modificados con exito"
-              : "No se pudieron modificar los datos de usuario"
-          );
+        res.status(200).json({ data: { id, ...info } });
     }
   } catch (error) {
     console.log(error);
