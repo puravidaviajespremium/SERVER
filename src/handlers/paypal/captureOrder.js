@@ -1,6 +1,6 @@
 const axios = require("axios");
 const reciboPago = require("../../controllers/nodemailers/reciboPago");
-const { Client, HistoryClient } = require("../../db.js");
+const { Client, HistoryClient, Pendient } = require("../../db.js");
 require("dotenv").config();
 const { CLIENT, SECRET, PAYPAL_API, URL_PAYPAL } = process.env;
 
@@ -27,24 +27,36 @@ const captureOrder = async (req, res) => {
 
     reciboPago(name, gmail, paymentId, value);
 
-    const responseClient = await Client.findOne({ where: { email } });
-    const ClientId = responseClient.dataValues.id;
-
     const date = new Date();
     const comment = "Pago Recibido";
     const originMsg = "PAYPAL";
     const payment = value;
     const paymentConcept = "Experto";
 
-    const history = await HistoryClient.create({
-      date,
-      comment,
-      originMsg,
-      payment,
-      paymentConcept,
-      paymentId,
-      ClientId,
-    });
+    const responseClient = await Client.findOne({ where: { email } });
+
+    if (responseClient) {
+      const ClientId = responseClient.dataValues.id;
+      const history = await HistoryClient.create({
+        date,
+        comment,
+        originMsg,
+        payment,
+        paymentConcept,
+        paymentId,
+        ClientId,
+      });
+    } else {
+      const pendients = await Pendient.create({
+        date,
+        comment,
+        originMsg,
+        payment,
+        paymentConcept,
+        paymentId,
+      });
+    }
+
     //res.json(response.data);
     res.redirect(`http://localhost:5173/payment/success?name=${name}`);
   } catch (error) {
