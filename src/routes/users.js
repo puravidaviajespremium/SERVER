@@ -8,6 +8,7 @@ const createUsers = require("../handlers/users/createUsers");
 const updateUser = require("../handlers/users/updateUser");
 let getFilterUserByUserStatus = require("../handlers/users/getFilterUsersByUserStatus")
 let getFilterUserByIsBlocked = require("../handlers/users/getFilterUsersByUserIsBlocked")
+let deleteManyUser = require("../handlers/users/deleteManyUsersHandler")
 
 routerUsers.get("/", getUsers); //OK
 
@@ -22,5 +23,7 @@ routerUsers.get("/:id", getUserById); //OK
 routerUsers.get("/filter/userStatus/:userStatus", getFilterUserByUserStatus); //OK
 
 routerUsers.get("/filter/isBlocked/:isBlocked", getFilterUserByIsBlocked) //OK
+
+routerUsers.delete("/deleteMany", deleteManyUser ) //OK
 
 module.exports = routerUsers;
