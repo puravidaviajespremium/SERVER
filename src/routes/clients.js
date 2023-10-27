@@ -9,7 +9,7 @@ routerClients.post("/create", createClient); //GENERAL
 
 routerClients.get("/", getClient); //USO COLABORADORES Y ADMIN
 
-routerClients.put("/update", updateClientHandler); //USO SOLO ADMIN
+routerClients.put("/update", updateClientHandler); //USO SOLO ADMIN //editado para el admin
 
 //ruta por ID
 

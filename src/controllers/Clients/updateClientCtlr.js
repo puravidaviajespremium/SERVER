@@ -30,7 +30,7 @@ const updateClient = async (email, client) => {
       },
       { where: { email } }
     );
-    return true;
+    return clientEdite; //editado para el admin
   }
 };
 
