@@ -8,7 +8,7 @@ const allCountries = async () => {
   }
 
   const response = countries.map((c) => {
-    return { id: c.id, name: c.name, image: c.image, continent: c.continent };
+    return { id: c.id, name: c.name, image: c.image, description: c.description, experiences: c.experiences, continent: c.continent };
   });
 
   return response;
