@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
           max: 200,
         },
       },
-      destinationCountry: {
+      email: {
         type: DataTypes.STRING,
       },
       originMsg: {
