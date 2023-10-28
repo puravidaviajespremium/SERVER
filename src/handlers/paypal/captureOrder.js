@@ -2,7 +2,7 @@ const axios = require("axios");
 const reciboPago = require("../../controllers/nodemailers/reciboPago");
 const { Client, HistoryClient, Pendient } = require("../../db.js");
 require("dotenv").config();
-const { CLIENT, SECRET, PAYPAL_API, URL_PAYPAL } = process.env;
+const { URL_FRONT } = process.env;
 
 const captureOrder = async (req, res) => {
   const { token } = req.query;
@@ -50,6 +50,7 @@ const captureOrder = async (req, res) => {
       const pendients = await Pendient.create({
         date,
         comment,
+        email,
         originMsg,
         payment,
         paymentConcept,
@@ -58,7 +59,7 @@ const captureOrder = async (req, res) => {
     }
 
     //res.json(response.data);
-    res.redirect(`http://localhost:5173/payment/success?name=${name}`);
+    res.redirect(`${URL_FRONT}/payment/success?name=${name}`);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
