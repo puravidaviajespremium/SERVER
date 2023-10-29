@@ -18,6 +18,11 @@ const createClientsCtlr = async (
   });
 
   if (!client) {
+    const userReg = await User.findOne({ where: { email } });
+    if (userReg) throw new Error("Usuario pertenece al Staff");
+    console.log(userReg);
+  }
+  if (!client) {
     const results = await User.findAll({
       where: {
         isBlocked: false,

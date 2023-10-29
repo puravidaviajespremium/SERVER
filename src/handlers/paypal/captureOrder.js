@@ -2,7 +2,7 @@ const axios = require("axios");
 const reciboPago = require("../../controllers/nodemailers/reciboPago");
 const { Client, HistoryClient, Pendient } = require("../../db.js");
 require("dotenv").config();
-const { URL_FRONT } = process.env;
+const { URL_FRONT, CLIENT, SECRET, PAYPAL_API } = process.env;
 
 const captureOrder = async (req, res) => {
   const { token } = req.query;

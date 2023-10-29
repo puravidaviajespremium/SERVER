@@ -19,7 +19,6 @@ let createUsers = async (req, res) => {
 
     res.status(201).send(newUser);
   } catch (error) {
-    3;
     console.log(error);
     res.status(500).json({ error: error.message });
   }
