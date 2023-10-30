@@ -3,7 +3,10 @@ const { Country, Destiny } = require("../../db.js");
 const getCountriesByIdctlr = async (id) => {
   const countriesById = await Country.findOne({
     where: { id },
-    include: Destiny,
+    include: [{
+      model: Destiny,
+      attributes: ["name", "image", "description"], // editado para el admin
+    }],
   });
 
   if (!countriesById) {
