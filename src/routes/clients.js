@@ -7,13 +7,14 @@ const deleteClientHandler = require("../handlers/Clients/deleteClient.js");
 let getFilteredClientsByContactStatusHandler = require("../handlers/Clients/getFilteredClientsByContactStatusHandler.js");
 let getFilteredClientsByMemberShipStatusHandler = require("../handlers/Clients/getFilteredClientsByMemberShipStatusHandler.js");
 let deleteManyClientsHandler = require('../handlers/Clients/deleteManyClientsHandler.js')
+let getClientByIdHandler = require("../handlers/Clients/getClientByIdHandler.js");
 
 
 routerClients.post("/create", createClient); //GENERAL
 
 routerClients.get("/", getClient); //USO COLABORADORES Y ADMIN
 
-routerClients.put("/update", updateClientHandler); //USO SOLO ADMIN //editado para el admin
+routerClients.put("/update/:id", updateClientHandler); //USO SOLO ADMIN //editado para el admin
 
 //ruta por ID
 
@@ -23,6 +24,8 @@ routerClients.get("/filter/contactStatus/:contactStatus", getFilteredClientsByCo
 
 routerClients.get("/filter/membershipStatus/:membershipStatus", getFilteredClientsByMemberShipStatusHandler) //OK
 
-routerClients.delete("/deleteMany", deleteManyClientsHandler ) //OK
+routerClients.delete("/deleteMany", deleteManyClientsHandler) //OK
+
+routerClients.get("/:id", getClientByIdHandler);
 
 module.exports = routerClients;
