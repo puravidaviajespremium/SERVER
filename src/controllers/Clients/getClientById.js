@@ -1,9 +1,14 @@
 let { Client } = require("../../db");
+let { HistoryClient } = require("../../db");
 
 let getClientById = async (id) => {
 
     let clientById = await Client.findOne({
-        where: { id }
+        where: { id },
+        include: [{
+            model: HistoryClient,
+            attributes: ["id", "date", "comment", "destinationCountry", "originMsg", "payment", "paymentConcept"]
+        }]
     });
 
     if (!clientById) {
@@ -15,3 +20,5 @@ let getClientById = async (id) => {
 };
 
 module.exports = getClientById;
+
+
