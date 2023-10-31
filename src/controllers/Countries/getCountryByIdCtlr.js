@@ -5,7 +5,7 @@ const getCountriesByIdctlr = async (id) => {
     where: { id },
     include: [{
       model: Destiny,
-      attributes: ["name", "image", "description"], // editado para el admin
+      attributes: ["id","name", "image", "description"], // editado para el admin
     }],
   });
 
