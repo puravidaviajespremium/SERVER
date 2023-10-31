@@ -2,14 +2,19 @@ const getAllClients = require("../../controllers/Clients/getAllClientsCtlr.js");
 const getClientsByName = require("../../controllers/Clients/getClientsByNameCtlr.js");
 
 const getClient = async (req, res) => {
-  const { firstName, lastName } = req.query;
+  const { firstName, lastName, page, perPage } = req.query;
+
+  const pageNumber = parseInt(page);
+  const rowsPerPage = parseInt(perPage);
+
+  const offset = (pageNumber - 1) * rowsPerPage;
 
   try {
     if (firstName || lastName) {
-      const clientByName = await getClientsByName(firstName, lastName);
+      const clientByName = await getClientsByName(firstName, lastName, offset, rowsPerPage);
       res.status(200).json(clientByName);
     } else {
-      const allClients = await getAllClients();
+      const allClients = await getAllClients(offset, rowsPerPage);
       res.status(200).json(allClients);
     }
   } catch (error) {

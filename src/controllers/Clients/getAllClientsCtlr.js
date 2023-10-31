@@ -1,13 +1,26 @@
 const { Client } = require("../../db.js");
 
-const getAllClients = async () => {
-  const allClients = await Client.findAll();
+const getAllClients = async (offset, rowsPerPage) => {
+  const allClients = await Client.findAndCountAll({
+    offset: offset,
+    limit: rowsPerPage
+  });
 
   if (allClients.length === 0) {
     throw new Error("No hay ningún cliente en la base de datos!");
   }
 
-  return allClients;
+  const hasPreviousPage = offset > 0;
+  const hasNextPage = allClients.rows.length === rowsPerPage;
+
+  return {
+    clients: allClients.rows,
+    total: allClients.count,
+    pageInfo:{
+      hasPreviousPage: hasPreviousPage,
+      hasNextPage: hasNextPage
+    }
+  };
 };
 
 module.exports = getAllClients;
