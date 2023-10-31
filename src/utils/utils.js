@@ -1,4 +1,3 @@
-const { Alumno } = require("../db.js");
 const fs = require("fs/promises");
 
 const agregarID = (data) => {
@@ -31,10 +30,16 @@ const pathMasivo = () => {
 };
 const pathMasivoUsers = () => {
   let path = __dirname;
-  //.split("\\");
-  //path.pop();
-  //return path.join("\\") + "\\data.json";
   return path + "\\users.json";
+};
+const pathMasivoClients = () => {
+  let path = __dirname;
+  return path + "\\clientsRevisado.json";
+};
+
+const pathMasivoHistories = () => {
+  let path = __dirname;
+  return path + "\\histories.json";
 };
 
 const filtrar = (user) => {
@@ -54,4 +59,12 @@ const fillDB = async () => {
   await Alumno.bulkCreate(data);
 };
 
-module.exports = { agregarID, quitarID, pathMasivo, pathMasivoUsers, fillDB };
+module.exports = {
+  agregarID,
+  quitarID,
+  pathMasivo,
+  pathMasivoUsers,
+  pathMasivoClients,
+  pathMasivoHistories,
+  fillDB,
+};

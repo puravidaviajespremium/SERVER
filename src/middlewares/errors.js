@@ -1,7 +1,7 @@
-module.exports = (err, req, res, next) => {
+module.exports = (error, req, res, next) => {
   // eslint-disable-line no-unused-vars
-  const status = err.status || 500;
-  const message = err.message || err;
-  console.error(err);
+  const status = error.status || 500;
+  const message = error.message || error;
+  console.error(error);
   res.status(status).send(message);
 };

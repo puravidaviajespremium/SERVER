@@ -22,12 +22,12 @@ const paypalRoute = require("./routes/paypal");
 require("dotenv").config();
 
 const configAuth0 = {
-  authRequired: false,
-  auth0Logout: true,
   issuerBaseURL: AUTH0_ISSUER_BASE_URL,
   baseURL: URL_BASE,
   clientID: AUTH0_CLIENT_ID,
   secret: SESSION_SECRET,
+  authRequired: false,
+  auth0Logout: true,
 };
 
 //Middlewares
@@ -49,17 +49,6 @@ server.use((req, res, next) => {
   res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
   next();
 });
-
-// (async () => {
-//   try {
-//     await sequelize.authenticate();
-//     await sequelize.sync();
-//     console.log("Connection has been established successfully.");
-//   } catch (error) {
-//     console.error("Unable to connect to the database:", error);
-//     throw new Error(error);
-//   }
-// })();
 
 //rutas
 server.get("/", (req, res) => {
@@ -83,9 +72,6 @@ server.use(auth(configAuth0));
 
 server.use("/authentication", routerAuthentication); //rutas Auth0
 
-// // Error catching endware.
-server.use(errors);
-
 // Errors Auth0
 server.use((req, res, next) => {
   const error = new Error("No encontrado");
@@ -93,9 +79,12 @@ server.use((req, res, next) => {
   next(error);
 });
 
+// // Error catching endware.
 server.use((error, req, res, next) => {
+  // eslint-disable-line no-unused-vars
   const status = error.status || 500;
-  const message = error.message || "Error interno del servidor";
+  const message = error.message || error;
+  console.error(error);
   res.status(status).send(message);
 });
 

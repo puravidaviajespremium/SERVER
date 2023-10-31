@@ -1,7 +1,3 @@
-const getCountriesByNamectlr = require("../../controllers/Countries/getCountriesByNamectlr");
-const {
-  allCountries,
-} = require("../../controllers/Countries/getCountriesCtlr");
 const getCountriesByIdctlr = require("../../controllers/Countries/getCountryByIdCtlr");
 
 const getCountriesById = async (req, res) => {
