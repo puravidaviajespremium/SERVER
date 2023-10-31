@@ -10,6 +10,7 @@ let getMetricsCtrl = async () => {
       "id",
       "firstName",
       "lastName",
+      "email",
       [fn("COUNT", col("Clients.id")), "clientCount"],
       [
         fn(
@@ -59,7 +60,7 @@ let getMetricsCtrl = async () => {
         attributes: [],
       },
     ],
-    group: ["User.id", "User.firstName", "User.lastName"],
+    group: ["User.id", "User.firstName", "User.lastName", "User.email"],
   });
 
   if (users.length === 0)
