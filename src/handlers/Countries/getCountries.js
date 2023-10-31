@@ -4,13 +4,19 @@ const {
 } = require("../../controllers/Countries/getCountriesCtlr");
 
 const getCountries = async (req, res) => {
-  const { country } = req.query;
+  const { country, page, perPage } = req.query;
+
+  const pageNumber = parseInt(page);
+  const rowsPerPage = parseInt(perPage);
+
+  const offset = (pageNumber - 1) * rowsPerPage;
+
   try {
     if (!country) {
-      const countries = await allCountries();
+      const countries = await allCountries(offset, rowsPerPage);
       res.status(200).json(countries);
     } else {
-      const countriesByName = await getCountriesByNamectlr(country);
+      const countriesByName = await getCountriesByNamectlr(country, offset, rowsPerPage);
       res.status(200).json(countriesByName);
     }
   } catch (error) {

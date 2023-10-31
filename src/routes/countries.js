@@ -21,6 +21,6 @@ routerCountries.put("/update/:id", updateCountries);
 
 routerCountries.delete("/delete/:id", deleteCountries); // terminada - MIRAR con el grupo /
 
-routerCountries.get("/filter/continent/:continent", getCountriesByContinentHandler); //Ok
+routerCountries.get("/filter/continent", getCountriesByContinentHandler); //Ok
 
 module.exports = routerCountries;
