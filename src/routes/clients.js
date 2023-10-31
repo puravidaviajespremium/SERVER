@@ -20,9 +20,9 @@ routerClients.put("/update/:id", updateClientHandler); //USO SOLO ADMIN //editad
 
 routerClients.delete("/delete/:id", deleteClientHandler); //USO SOLO ADMIN, se cambio a params!
 
-routerClients.get("/filter/contactStatus/:contactStatus", getFilteredClientsByContactStatusHandler); //Ok
+routerClients.get("/filter/contactStatus", getFilteredClientsByContactStatusHandler); //Ok
 
-routerClients.get("/filter/membershipStatus/:membershipStatus", getFilteredClientsByMemberShipStatusHandler) //OK
+routerClients.get("/filter/membershipStatus", getFilteredClientsByMemberShipStatusHandler) //OK
 
 routerClients.delete("/deleteMany", deleteManyClientsHandler) //OK
 

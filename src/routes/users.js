@@ -23,7 +23,7 @@ routerUsers.delete("/delete/:id", deleteUsers); //OK
 
 routerUsers.get("/:id", getUserById); //OK
 
-routerUsers.get("/filter/userStatus/:userStatus", getFilterUserByUserStatus); //OK
+routerUsers.get("/filter/userStatus", getFilterUserByUserStatus); //OK
 
 routerUsers.get("/filter/isBlocked/:isBlocked", getFilterUserByIsBlocked); //OK
 
