@@ -3,9 +3,9 @@ let getFilteredClientsByContactStatus = require("../../controllers/Clients/getFi
 
 const getClientsByColl = async (req, res) => {
   console.log(req.query);
-  let { UserId, membershipStatus, contactStatus, page, perPage } = req.query;
+  let { UserId, membershipStatus, contactStatus, firstName,  page, perPage } = req.query;
 
-  console.log(UserId, membershipStatus, contactStatus, page, perPage);
+  console.log(UserId, membershipStatus, contactStatus, page, perPage, firstName);
   const pageNumber = parseInt(page);
   const rowsPerPage = parseInt(perPage);
 
@@ -16,6 +16,7 @@ const getClientsByColl = async (req, res) => {
       UserId,
       membershipStatus,
       contactStatus,
+      firstName,
       offset,
       rowsPerPage
     );

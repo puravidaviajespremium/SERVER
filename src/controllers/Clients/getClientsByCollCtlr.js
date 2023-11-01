@@ -5,10 +5,17 @@ let getClientsByCollCtlr = async (
   UserId,
   membershipStatus,
   contactStatus,
+  firstName,
   offset,
   rowsPerPage
 ) => {
   const filters = {};
+
+  if (firstName) {
+    filters.firstName = {
+      [Sequelize.Op.like]: `%${firstName}%`,
+    };
+  }
 
   if (UserId) {
     filters.UserId = {
