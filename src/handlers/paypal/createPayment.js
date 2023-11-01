@@ -1,6 +1,6 @@
 const axios = require("axios");
 require("dotenv").config();
-const { CLIENT, SECRET, PAYPAL_API, URL_PAYPAL } = process.env;
+const { CLIENT, SECRET, PAYPAL_API, URL_BASE } = process.env;
 
 const createPayment = async (req, res) => {
   const order = {
@@ -17,8 +17,8 @@ const createPayment = async (req, res) => {
       brand_name: "Pura Vida Viajes Premium",
       landing_page: "NO_PREFERENCE",
       user_action: "PAY_NOW",
-      return_url: "http://localhost:3001/paypal/capture-order",
-      cancel_url: "http://localhost:3001/paypal/cancel-order",
+      return_url: `${URL_BASE}/paypal/capture-order`,
+      cancel_url: `${URL_BASE}/paypal/cancel-order`,
     },
   };
 

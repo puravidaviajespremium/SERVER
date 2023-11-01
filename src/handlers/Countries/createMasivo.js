@@ -1,6 +1,17 @@
 const fs = require("fs/promises");
-const { pathMasivo, pathMasivoUsers } = require("../../utils/utils.js");
-const { Country, Destiny, User } = require("../../db.js");
+const {
+  pathMasivo,
+  pathMasivoUsers,
+  pathMasivoClients,
+  pathMasivoHistories,
+} = require("../../utils/utils.js");
+const {
+  Country,
+  Destiny,
+  User,
+  Client,
+  HistoryClient,
+} = require("../../db.js");
 const {
   createCountries,
 } = require("../../controllers/Countries/createCountriesCtlr.js");
@@ -11,6 +22,7 @@ const createCountriesMasivo = async (req, res) => {
     const datausers = JSON.parse(responseUsers);
 
     const newUsers = await User.bulkCreate(datausers);
+    console.log("Users OK");
 
     const response = await fs.readFile(pathMasivo());
     const data = JSON.parse(response);
@@ -31,7 +43,19 @@ const createCountriesMasivo = async (req, res) => {
 
     const countries = await Country.findAll();
 
-    res.status(201).json(countries);
+    const responseClients = await fs.readFile(pathMasivoClients());
+    const dataClients = JSON.parse(responseClients);
+
+    const newClients = await Client.bulkCreate(dataClients);
+    console.log("newClients");
+
+    const responseHistories = await fs.readFile(pathMasivoHistories());
+    const dataHistories = JSON.parse(responseHistories);
+
+    const newHistories = await HistoryClient.bulkCreate(dataHistories);
+    console.log(newHistories);
+
+    res.status(201).json(newClients);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
