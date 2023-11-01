@@ -16,7 +16,7 @@ module.exports = (sequelize) => {
         allowNull: false,
         validate: {
           min: 2,
-          max: 20,
+          max: 50,
         },
       },
       image: {
