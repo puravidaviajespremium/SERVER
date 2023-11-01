@@ -9,6 +9,7 @@ const updateClient = async (id, client) => {
     countryOrigin,
     membershipStatus,
     contactStatus,
+    UserId,
   } = client;
 
   const existingClient = await Client.findOne({
@@ -27,6 +28,7 @@ const updateClient = async (id, client) => {
         countryOrigin,
         membershipStatus,
         contactStatus,
+        UserId,
       },
       { where: { id } }
     );
