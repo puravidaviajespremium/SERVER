@@ -19,7 +19,7 @@ const captureOrder = async (req, res) => {
     );
 
     const name = response.data.purchase_units[0].shipping.name.full_name;
-    const gmail = "jhonattan1410@gmail.com";
+    const gmail = "sergiodarioaguilar2017@gmail.com";
     const email = response.data.payment_source.paypal.email_address;
     const paymentId = response.data.id;
     const value =
