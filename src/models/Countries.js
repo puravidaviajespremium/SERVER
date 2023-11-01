@@ -14,8 +14,8 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          min: 4,
-          max: 20,
+          min: 2,
+          max: 50,
         },
       },
       image: {
