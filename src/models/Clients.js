@@ -13,16 +13,10 @@ module.exports = (sequelize) => {
       firstName: {
         type: DataTypes.STRING,
         defaultValue: "No asignado",
-        validate: {
-          min: 2,
-        },
       },
       lastName: {
         type: DataTypes.STRING,
         defaultValue: "No asignado",
-        validate: {
-          min: 1,
-        },
       },
       email: {
         type: DataTypes.STRING,
@@ -34,14 +28,14 @@ module.exports = (sequelize) => {
       },
       telephone: {
         type: DataTypes.STRING,
-        defaultValue: '0000000000',
+        defaultValue: "0000000000",
         validate: {
           is: /^\d{9,18}$/,
         },
       },
       countryOrigin: {
         type: DataTypes.STRING,
-        defaultValue: "No asignado"
+        defaultValue: "No asignado",
       },
       membershipStatus: {
         type: DataTypes.ENUM,

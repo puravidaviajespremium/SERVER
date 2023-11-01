@@ -12,7 +12,8 @@ const updateClientHandler = async (req, res) => {
       info.email &&
       info.countryOrigin &&
       info.membershipStatus &&
-      info.contactStatus
+      info.contactStatus &&
+      info.UserId
     ) {
       const updateC = await updateClient(id, info);
       if (updateC) {
