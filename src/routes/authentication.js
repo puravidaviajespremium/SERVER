@@ -26,20 +26,20 @@ routerAuthentication.get("/protected", async (req, res) => {
         },
       }
     );
-    console.log(response.data.email);
+
     const userAutenticated = await User.findOne({
       where: { email: response.data.email },
     });
 
     if (userAutenticated) {
-      console.log("ENCONTRADO");
-      const { firstName, lastName, email, isBlocked, userStatus } =
+      const { id, firstName, lastName, email, isBlocked, userStatus } =
         userAutenticated.dataValues;
 
       if (!isBlocked) {
         name = `${firstName} ${lastName}`;
         userProfile = {
           user: {
+            id,
             name,
             email,
             role: userStatus,
@@ -49,7 +49,7 @@ routerAuthentication.get("/protected", async (req, res) => {
         };
       } else {
         name = `${firstName} ${lastName}`;
-        userProfile = { user: { name, email, blocked: true } };
+        userProfile = { user: { id, name, email, blocked: true } };
       }
     } else {
       const clientsAutenticate = await Client.findOne({
@@ -57,10 +57,12 @@ routerAuthentication.get("/protected", async (req, res) => {
       });
 
       if (clientsAutenticate) {
-        const { firstName, lastName, email } = clientsAutenticate.dataValues;
+        const { id, firstName, lastName, email } =
+          clientsAutenticate.dataValues;
         name = `${firstName} ${lastName}`;
         userProfile = {
           user: {
+            id,
             name,
             email,
             role: "Cliente",
@@ -70,6 +72,7 @@ routerAuthentication.get("/protected", async (req, res) => {
       } else {
         userProfile = {
           user: {
+            id: "",
             name: response.data.nickname,
             email: response.data.email,
             role: "No Registrado",
