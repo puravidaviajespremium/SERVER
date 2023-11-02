@@ -18,13 +18,17 @@ const {
 
 const createCountriesMasivo = async (req, res) => {
   try {
-    const responseUsers = await fs.readFile(pathMasivoUsers());
+    const responseUsers = await fs.readFile(
+      "/opt/render/project/src/src/utils/users.json"
+    );
     const datausers = JSON.parse(responseUsers);
 
     const newUsers = await User.bulkCreate(datausers);
     console.log("Users OK");
 
-    const response = await fs.readFile(pathMasivo());
+    const response = await fs.readFile(
+      "/opt/render/project/src/src/utils/data.json"
+    );
     const data = JSON.parse(response);
 
     data.forEach(async (pais) => {
@@ -43,13 +47,17 @@ const createCountriesMasivo = async (req, res) => {
 
     const countries = await Country.findAll();
 
-    const responseClients = await fs.readFile(pathMasivoClients());
+    const responseClients = await fs.readFile(
+      "/opt/render/project/src/src/utils/clientsRevisado.json"
+    );
     const dataClients = JSON.parse(responseClients);
 
     const newClients = await Client.bulkCreate(dataClients);
     console.log("newClients");
 
-    const responseHistories = await fs.readFile(pathMasivoHistories());
+    const responseHistories = await fs.readFile(
+      "/opt/render/project/src/src/utils/histories.json"
+    );
     const dataHistories = JSON.parse(responseHistories);
 
     const newHistories = await HistoryClient.bulkCreate(dataHistories);
